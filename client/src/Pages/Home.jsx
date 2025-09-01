@@ -31,13 +31,13 @@ const Home = () => {
 
                     <div className="mt-14 flex justify-center gap-4 ">
                         <Link
-                            to="/booking"
+                            to="/contact"
                             className="px-6 py-3 rounded-2xl bg-[#f5c934] text-gray-900 font-semibold hover:bg-yellow-400 transition"
                         >
-                            Book Now
+                            Contact Us
                         </Link>
                         <Link
-                            to="/explore"
+                            to="/about"
                             className="px-6 py-3 rounded-2xl bg-white/80 text-gray-900 font-semibold hover:bg-white transition"
                         >
                             Explore

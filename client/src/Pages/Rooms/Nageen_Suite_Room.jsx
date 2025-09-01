@@ -9,14 +9,14 @@ import { Utensils, Monitor, Wifi, Eye, Sun, Trees, Briefcase, BedDouble, Bath, M
 
 const Nageen_Suite_Room = () => {
     const images = [
-        "HouseBoats/Premium_Lake_View/1.jpeg",
-        "HouseBoats/Premium_Lake_View/2.jpeg",
-        "HouseBoats/Premium_Lake_View/3.jpeg",
-        "HouseBoats/Premium_Lake_View/4.jpeg",
-        "HouseBoats/Premium_Lake_View/5.jpeg",
-        "HouseBoats/Premium_Lake_View/6.jpeg",
-        "HouseBoats/Premium_Lake_View/7.jpeg",
-        "HouseBoats/Premium_Lake_View/8.jpeg",
+        "HouseBoats/Nageen_Suite/1.jpg",
+        "HouseBoats/Nageen_Suite/2.jpg",
+        "HouseBoats/Nageen_Suite/3.jpg",
+        "HouseBoats/Nageen_Suite/4.jpg",
+        "HouseBoats/Nageen_Suite/5.jpg",
+        "HouseBoats/Nageen_Suite/6.jpg",
+        "HouseBoats/Nageen_Suite/7.jpg",
+
 
     ];
 
@@ -130,11 +130,11 @@ const Nageen_Suite_Room = () => {
             <section className="my-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
                 <h2 className="text-2xl font-semibold mb-4">Overview</h2>
                 <p className="text-gray-700 leading-relaxed">
-                    The Premium Lake View Room is all about elegance and serenity.
-                    <strong> With its luxuriant interiors, refined décor, and a comfortable double bed , </strong>
-                    it creates the perfect retreat for couples. The highlight, of course,
-                    is the breathtaking view of Nigeen Lake right from your window—turning
-                    every sunrise and sunset into a picture-perfect memory.
+                    The Nigeen Suite Room offers a perfect blend of space, elegance,
+                    and Kashmiri heritage charm. Thoughtfully designed with
+                    <strong> international-standard facilities </strong>,
+                    this suite ensures a luxurious and comfortable stay. <strong> Featuring a double bed and refined furnishings, </strong>
+                    it provides the ideal retreat for couples or travelers seeking both relaxation and sophistication.
                 </p>
             </section>
 

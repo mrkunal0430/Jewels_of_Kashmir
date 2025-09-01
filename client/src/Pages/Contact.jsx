@@ -1,8 +1,45 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaWhatsapp, FaYoutube, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import mmtLogo from "../assets/makemytrip.svg";
+
 
 export default function Contact() {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.target);
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            setIsSubmitted(true);
+            e.target.reset(); // clear form
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    };
+
+
+
+    // whatsup handler 
+    const handleWhatsupSubmit = (e) => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const message = e.target.message.value;
+        const whatsappUrl = `https://wa.me/918750075080?text=Hi, my name is ${name}. ${message}`;
+        window.open(whatsappUrl, "_blank");
+        e.target.reset();
+    };
+
     return (
         <div className="w-full">
             {/* Hero Section */}
@@ -26,20 +63,7 @@ export default function Contact() {
                     <p className="mt-4 text-lg md:text-xl text-white">
                         Luxury Houseboats on Nigeen Lake, Srinagar
                     </p>
-                    <div className="mt-6 flex justify-center gap-4">
-                        <Link
-                            to="/booking"
-                            className="px-6 py-3 rounded-2xl bg-[#f5c934] text-gray-900 font-semibold hover:bg-yellow-400 transition"
-                        >
-                            Book Now
-                        </Link>
-                        <Link
-                            to="/explore"
-                            className="px-6 py-3 rounded-2xl bg-white/80 text-gray-900 font-semibold hover:bg-white transition"
-                        >
-                            Explore
-                        </Link>
-                    </div>
+
                 </motion.div>
             </section>
 
@@ -57,19 +81,19 @@ export default function Contact() {
                 <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-2xl overflow-hidden">
 
                     {/* Left - Contact Info */}
-                    <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-white p-10 flex flex-col justify-between">
+                    <div className="bg-gradient-to-br from-yellow-600 to-yellow-400 text-white p-8 flex flex-col justify-between">
                         <div>
-                            <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-                            <p className="mb-6">
+                            <h2 className="text-3xl font-bold mb-3">Get in Touch</h2>
+                            <p className="mb-4">
                                 Experience luxury and tradition with <b>Jewels of Kashmir Houseboats</b>.
                                 Reach out to us for bookings, queries, or special requests.
                             </p>
-                            <ul className="space-y-4 text-lg">
+                            <ul className="space-y-2 text-lg">
                                 <li className="flex items-center gap-3">
-                                    <FaPhoneAlt /> <span>+91 98765 43210</span>
+                                    <FaPhoneAlt /> <span>+91 9906607462</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <FaEnvelope /> <span>info@jewelsofkashmir.com</span>
+                                    <FaEnvelope /> <span>info.jewelofkashmir@gmail.com</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <FaMapMarkerAlt /> <span>Nigeen Lake, Srinagar, Kashmir</span>
@@ -77,50 +101,117 @@ export default function Contact() {
                             </ul>
                         </div>
 
+                        <div className="mt-8">
+                            <form onSubmit={handleWhatsupSubmit} className="space-y-4">
+                                <input type="text" name="name" placeholder="Your Name" required className="bg-white text-black w-full p-2 border rounded" />
+                                <textarea name="message" placeholder="Your Message" required className="bg-white text-black w-full p-2 border rounded" />
+                                <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded flex gap-3 justify-center items-center hover:scale-105 transition-transform duration-300"><FaWhatsapp className="text-lg" /> Send via WhatsApp</button>
+                            </form>
+                        </div>
+
                         {/* Social Links */}
-                        <div className="flex gap-5 mt-8">
-                            <a href="#" className="text-white text-2xl hover:text-gray-200"><FaFacebook /></a>
-                            <a href="#" className="text-white text-2xl hover:text-gray-200"><FaInstagram /></a>
-                            <a href="https://wa.me/919876543210" className="text-white text-2xl hover:text-gray-200"><FaWhatsapp /></a>
+                        <div className="mt-6">
+                            <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
+                            <div className="flex space-x-4">
+                                {/* Facebook */}
+                                <a
+                                    href="https://www.facebook.com/jewelofkashmirhouseboat/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 rounded-full bg-blue-600 text-white text-xl hover:scale-110 transition-transform duration-300"
+                                >
+                                    <FaFacebook />
+                                </a>
+
+                                {/* Instagram */}
+                                <a
+                                    href="https://www.instagram.com/jewel_kashmir_houseboat/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white text-xl hover:scale-110 transition-transform duration-300"
+                                >
+                                    <FaInstagram />
+                                </a>
+
+                                {/* MMT */}
+                                <a
+                                    href="https://app.mmyt.co/Xm2V/8xo8sd2w"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-1 px-3 rounded-full bg-sky-400 text-white text-md hover:scale-110 transition-transform duration-300"
+                                >
+                                    Make My Trip
+                                </a>
+
+
+                            </div>
+
+
                         </div>
                     </div>
 
                     {/* Right - Contact Form */}
                     <div className="p-8">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h2>
-                        <form className="space-y-5">
+                        <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+                            Send us a Message
+                        </h2>
+
+                        <form onSubmit={handleSubmit} className="space-y-5">
+                            {/* 🔑 Replace with your Web3Forms Access Key */}
+                            <input
+                                type="hidden"
+                                name="access_key"
+                                value="YOUR_ACCESS_KEY_HERE"
+                            />
+
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">Your Name</label>
+                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                    Your Name
+                                </label>
                                 <input
                                     type="text"
+                                    name="name"
                                     placeholder="Enter your name"
+                                    required
                                     className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
                                 />
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">Contact Number</label>
+                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                    Contact Number
+                                </label>
                                 <input
                                     type="tel"
+                                    name="phone"
                                     placeholder="+91 9876543210"
+                                    required
                                     className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
                                 />
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">Email Address</label>
+                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                    Email Address
+                                </label>
                                 <input
                                     type="email"
-                                    placeholder="john@example.com"
+                                    name="email"
+                                    placeholder="jewelsofkashmir@gmail.com"
+                                    required
                                     className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
                                 />
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">Message</label>
+                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                    Message
+                                </label>
                                 <textarea
+                                    name="message"
                                     rows="4"
                                     placeholder="Write your message..."
+                                    required
                                     className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
                                 ></textarea>
                             </div>
@@ -132,6 +223,26 @@ export default function Contact() {
                                 Send Message
                             </button>
                         </form>
+
+                        {/* ✅ Thank You Popup */}
+                        {isSubmitted && (
+                            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                                <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                        Thank You!
+                                    </h3>
+                                    <p className="text-gray-600">
+                                        Your message has been sent successfully. We will contact you soon.
+                                    </p>
+                                    <button
+                                        onClick={() => setIsSubmitted(false)}
+                                        className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
 

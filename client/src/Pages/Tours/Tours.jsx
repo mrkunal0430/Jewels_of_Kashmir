@@ -9,7 +9,7 @@ export default function Tour() {
         {
             name: "Gulmarg",
             path: "/tour/gulmarg",
-            img: "Tours/gulmarg.jpg",
+            img: "Tours/Gulmarg/gulmarg.jpg",
             blurb:
                 "Snow-kissed meadows, pine forests, and the iconic Gulmarg Gondola. Perfect for skiing in winter and lush hikes in summer.",
             highlights: ["Gondola Ride", "Skiing", "Apharwat Peak"],
@@ -19,7 +19,7 @@ export default function Tour() {
         {
             name: "Pahalgam",
             path: "/tour/pahalgam",
-            img: "Tours/pahalgam.jpg",
+            img: "Tours/Pahalgam/pahalgam.jpg",
             blurb:
                 "Riverside charm along the Lidder, verdant valleys, and jaw-dropping trails to Betaab & Aru valleys.",
             highlights: ["Lidder River", "Betaab Valley", "Aru Valley"],
@@ -29,7 +29,7 @@ export default function Tour() {
         {
             name: "Sonmarg",
             path: "/tour/sonmarg",
-            img: "Tours/sonmarg.jpg",
+            img: "Tours/Sonmarg/sonmarg.jpg",
             blurb:
                 "‘Meadow of Gold’ with glaciers, turquoise streams, and routes that open the door to Ladakh.",
             highlights: ["Thajiwas Glacier", "Zoji La", "River Rafting"],

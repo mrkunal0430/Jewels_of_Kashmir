@@ -9,13 +9,13 @@ import { Utensils, Monitor, Wifi, Eye, Sun, Trees, Briefcase, BedDouble, Bath, M
 
 const Super_Deluxe = () => {
     const images = [
-        "HouseBoats/Nageen_Suite/1.jpg",
-        "HouseBoats/Nageen_Suite/2.jpg",
-        "HouseBoats/Nageen_Suite/3.jpg",
-        "HouseBoats/Nageen_Suite/4.jpg",
-        "HouseBoats/Nageen_Suite/5.jpg",
-        "HouseBoats/Nageen_Suite/6.jpg",
-        "HouseBoats/Nageen_Suite/7.jpg",
+        "HouseBoats/Super_Deluxe/1.jpeg",
+        "HouseBoats/Super_Deluxe/2.jpeg",
+        "HouseBoats/Super_Deluxe/3.jpeg",
+        "HouseBoats/Super_Deluxe/4.jpeg",
+        "HouseBoats/Super_Deluxe/5.jpeg",
+        "HouseBoats/Super_Deluxe/6.jpeg",
+        "HouseBoats/Super_Deluxe/7.jpeg",
 
 
     ];
@@ -28,7 +28,7 @@ const Super_Deluxe = () => {
         { icon: <Sun className="w-6 h-6" />, label: "Air Conditioning" },
         { icon: <Trees className="w-6 h-6" />, label: "Garden" },
         { icon: <Briefcase className="w-6 h-6" />, label: "Luggage Storage" },
-        { icon: <BedDouble className="w-6 h-6" />, label: "Double Bed" },
+        { icon: <BedDouble className="w-6 h-6" />, label: "King Size Bed" },
         { icon: <Bath className="w-6 h-6" />, label: "Jacuzzi" },
 
     ];
@@ -130,11 +130,12 @@ const Super_Deluxe = () => {
             <section className="my-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
                 <h2 className="text-2xl font-semibold mb-4">Overview</h2>
                 <p className="text-gray-700 leading-relaxed">
-                    The Premium Lake View Room is all about elegance and serenity.
-                    <strong> With its luxuriant interiors, refined décor, and a comfortable double bed , </strong>
-                    it creates the perfect retreat for couples. The highlight, of course,
-                    is the breathtaking view of Nigeen Lake right from your window—turning
-                    every sunrise and sunset into a picture-perfect memory.
+                    The Super Deluxe Room combines traditional Kashmiri charm with
+                    <strong> modern comforts. With its cozy décor, warm ambience, and inviting aroma </strong>
+                    , this room is designed for
+                    those looking to create special memories. It features a king-size bed,
+                    a plush sitting area with sofa and chairs, and a separate dressing room for your comfort.
+                    Perfect for couples, families, or anyone seeking luxury on the waters of Nigeen Lake.
                 </p>
             </section>
 
@@ -149,7 +150,7 @@ const Super_Deluxe = () => {
                             <li>Attached bathrooms with hot & cold water</li>
                             <li>Traditional Kashmiri hand-carved wooden interiors</li>
                             <li>Complimentary Wi-Fi and 24/7 room service</li>
-                            <li>Sun deck with panoramic views of Nigeen Lake</li>
+                            <li>Plush sofa seating with chairs</li>
                             <li>Dining area serving authentic Kashmiri & Indian cuisine</li>
                         </ul>
                     </section>

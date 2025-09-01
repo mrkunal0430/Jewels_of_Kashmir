@@ -17,6 +17,7 @@ const AC_Royal_Suite = () => {
         "HouseBoats/Royal_Suite/6.jpeg",
         "HouseBoats/Royal_Suite/7.jpeg",
         "HouseBoats/Royal_Suite/8.jpeg",
+        "HouseBoats/Royal_Suite/9.jpeg",
 
     ];
 
@@ -130,11 +131,14 @@ const AC_Royal_Suite = () => {
             <section className="my-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
                 <h2 className="text-2xl font-semibold mb-4">Overview</h2>
                 <p className="text-gray-700 leading-relaxed">
-                    The Premium Lake View Room is all about elegance and serenity.
-                    <strong> With its luxuriant interiors, refined décor, and a comfortable double bed , </strong>
-                    it creates the perfect retreat for couples. The highlight, of course,
-                    is the breathtaking view of Nigeen Lake right from your window—turning
-                    every sunrise and sunset into a picture-perfect memory.
+                    The Royal Suite is the epitome of luxury on Nigeen Lake.
+                    Larger and more opulent than other room categories,
+                    it showcases unique interiors that reflect Kashmiri elegance and royal charm.
+                    Featuring
+                    <strong> an elegant bedroom for up to 3 guests, a lavish Italian marble bathroom,
+                        flat-screen TV, and a Jacuzzi</strong>
+                    the Royal Suite ensures unmatched comfort and indulgence.
+
                 </p>
             </section>
 

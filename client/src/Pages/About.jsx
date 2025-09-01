@@ -27,7 +27,7 @@ export default function About() {
             {/* Hero Section */}
             <section className="relative h-[80vh] flex items-center justify-center text-center">
                 <img
-                    src="/images/about-hero.jpg"
+                    src="About/Hero.jpg"
                     alt="Jewels of Kashmir"
                     className="absolute inset-0 w-full h-full object-cover"
                 />

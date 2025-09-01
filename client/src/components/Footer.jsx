@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
@@ -47,13 +47,42 @@ export default function Footer() {
 
                 {/* Socials */}
                 <div>
-                    <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
-                    <div className="flex gap-4 text-2xl">
-                        <a href="#" className="text-blue-600 hover:text-white"><FaFacebook /></a>
-                        <a href="#" className="text-pink-500 hover:text-white"><FaInstagram /></a>
-                        <a href="#" className="text-sky-400 hover:text-white"><FaTwitter /></a>
-                        <a href="#" className="text-red-600 hover:text-white"><FaYoutube /></a>
+                    <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
+                    <div className="flex space-x-4">
+                        {/* Facebook */}
+                        <a
+                            href="https://www.facebook.com/jewelofkashmirhouseboat/"
+                            className="p-2 rounded-full bg-blue-600 text-white text-xl hover:scale-110 transition-transform duration-300"
+                        >
+                            <FaFacebook />
+                        </a>
+
+                        {/* Instagram */}
+                        <a
+                            href="https://www.instagram.com/jewel_kashmir_houseboat/"
+                            className="p-2 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white text-xl hover:scale-110 transition-transform duration-300"
+                        >
+                            <FaInstagram />
+                        </a>
+
+                        {/* Twitter */}
+                        <a
+                            href="#"
+                            className="p-2 rounded-full bg-sky-400 text-white text-xl hover:scale-110 transition-transform duration-300"
+                        >
+                            <FaTwitter />
+                        </a>
+
+                        {/* YouTube */}
+                        <a
+                            href="#"
+                            className="p-2 rounded-full bg-red-500 text-white text-xl hover:scale-110 transition-transform duration-300"
+                        >
+                            <FaYoutube />
+                        </a>
                     </div>
+
+
                 </div>
             </div>
 

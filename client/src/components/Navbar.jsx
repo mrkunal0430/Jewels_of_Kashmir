@@ -45,7 +45,10 @@ export default function Navbar() {
 
                 {/* Left Navigation (Desktop) */}
                 <nav className="hidden lg:flex items-center gap-8 font-medium">
-                    <NavLink to="/" className="text-amber-400 hover:text-white transition">
+                    <NavLink to="/" className={({ isActive }) =>
+                        `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                        }`
+                    }>
                         Home
                     </NavLink>
 
@@ -53,7 +56,7 @@ export default function Navbar() {
                     <div className="relative">
                         <button
                             onClick={() => toggleDropdown("houseboats")}
-                            className="flex items-center gap-1 text-amber-400 hover:text-white transition"
+                            className="flex items-center gap-1 transition hover:text-amber-400 text-amber-400"
                         >
                             Rooms <ChevronDown size={16} />
                         </button>
@@ -67,7 +70,10 @@ export default function Navbar() {
                         )}
                     </div>
 
-                    <NavLink to="/tour" className="text-amber-400 hover:text-white transition">
+                    <NavLink to="/tour" className={({ isActive }) =>
+                        `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                        }`
+                    }>
                         Tours
                     </NavLink>
                 </nav>
@@ -84,14 +90,23 @@ export default function Navbar() {
                 {/* Right Navigation (Desktop) */}
                 <nav className="hidden lg:flex items-center gap-8 font-medium">
                     {/* Travel Guide Dropdown */}
-                    <NavLink to="/about" className="text-amber-400 hover:text-white transition">
+                    <NavLink to="/about" className={({ isActive }) =>
+                        `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                        }`
+                    }>
                         About
                     </NavLink>
 
-                    <NavLink to="/blog" className="text-amber-400 hover:text-white transition">
+                    <NavLink to="/blog" className={({ isActive }) =>
+                        `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                        }`
+                    }>
                         Blog
                     </NavLink>
-                    <NavLink to="/contact" className="text-amber-400 hover:text-white transition">
+                    <NavLink to="/contact" className={({ isActive }) =>
+                        `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                        }`
+                    }>
                         Contact
                     </NavLink>
                 </nav>
@@ -129,22 +144,7 @@ export default function Navbar() {
 
                     <NavLink to="/tour" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Tours</NavLink>
 
-                    {/* Mobile Travel Guide Dropdown */}
-                    <div>
-                        <button
-                            onClick={() => toggleMobileDropdown("guide")}
-                            className="flex items-center justify-between w-full hover:text-amber-600"
-                        >
-                            Travel Guide <ChevronDown size={16} />
-                        </button>
-                        {mobileDropdown === "guide" && (
-                            <div className="ml-4 mt-2 space-y-2">
-                                <NavLink to="/attraction" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Attractions</NavLink>
-                                <NavLink to="/local-cuisine" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Local Cuisine</NavLink>
-                                <NavLink to="/culture" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Culture</NavLink>
-                            </div>
-                        )}
-                    </div>
+                    <NavLink to="/about" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">About</NavLink>
 
                     <NavLink to="/blog" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Blog</NavLink>
                     <NavLink to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Contact</NavLink>

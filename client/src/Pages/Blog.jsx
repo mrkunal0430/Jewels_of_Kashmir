@@ -16,7 +16,7 @@ export default function BlogPage() {
             excerpt:
                 "Why Nigeen Lake is called the ‘Jewel in the Ring of Kashmir’ and how to make the most of your stay here.",
             image:
-                "https://images.unsplash.com/photo-1607779097990-44d39b98d24c?q=80&w=1200",
+                "Blog/hero_child.jpg",
             category: "Destinations",
             link: "/blog/nigeen-lake",
         },
@@ -26,7 +26,7 @@ export default function BlogPage() {
             excerpt:
                 "From sipping Kahwa at sunrise to stargazing at night, here’s how to create memories on a houseboat.",
             image:
-                "https://images.unsplash.com/photo-1622455021675-3e447ddb5a0d?q=80&w=1200",
+                "Blog/5things.jpg",
             category: "Experiences",
             link: "/blog/houseboat-stay",
         },
@@ -36,7 +36,7 @@ export default function BlogPage() {
             excerpt:
                 "Explore Rogan Josh, Gushtaba, and the world-famous Wazwan – a feast for the senses.",
             image:
-                "https://images.unsplash.com/photo-1621784563330-5ec64c21bcd9?q=80&w=1200",
+                "Blog/Cuisine.png",
             category: "Food & Culture",
             link: "/blog/kashmiri-food",
         },
@@ -45,7 +45,7 @@ export default function BlogPage() {
             title: "A Journey Through Gulmarg",
             excerpt: "Discover why Gulmarg is a year-round paradise for skiers and trekkers alike.",
             image:
-                "https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?q=80&w=1200",
+                "Blog/Gulmarg.jpg",
             category: "Destinations",
             link: "/blog/gulmarg",
         },
@@ -54,7 +54,7 @@ export default function BlogPage() {
             title: "Hidden Gems of Srinagar",
             excerpt: "Uncover offbeat experiences and lesser-known attractions in Srinagar.",
             image:
-                "https://images.unsplash.com/photo-1617196036879-5ff98f3bc3a7?q=80&w=1200",
+                "Blog/Hidden_gem.jpg",
             category: "Travel Tips",
             link: "/blog/srinagar-gems",
         },
@@ -64,7 +64,7 @@ export default function BlogPage() {
             excerpt:
                 "Walk through Shalimar, Nishat, and Chashme Shahi — Mughal-era gardens that tell timeless stories.",
             image:
-                "https://images.unsplash.com/photo-1596445667470-4b9c35f6f2f8?q=80&w=1200",
+                "Blog/Garden.jpg",
             category: "Culture",
             link: "/blog/kashmir-gardens",
         },
@@ -79,7 +79,7 @@ export default function BlogPage() {
                 className="relative h-[50vh] flex items-center justify-center text-center bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        "url('https://images.unsplash.com/photo-1582738412215-56c1ef9c1e59?q=80&w=1600')",
+                        "url('Blog/hero.png')",
                 }}
             >
                 <div className="absolute inset-0 bg-black/40"></div>
