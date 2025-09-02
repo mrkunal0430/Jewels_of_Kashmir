@@ -130,14 +130,14 @@ export default function Navbar() {
                             onClick={() => toggleMobileDropdown("houseboats")}
                             className="flex items-center justify-between w-full hover:text-amber-600"
                         >
-                            Houseboats <ChevronDown size={16} />
+                            Rooms <ChevronDown size={16} />
                         </button>
                         {mobileDropdown === "houseboats" && (
                             <div className="ml-4 mt-2 space-y-2">
                                 <NavLink to="/super-deluxe" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Super Deluxe</NavLink>
                                 <NavLink to="/ac-royal-suite" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">AC Royal Suite</NavLink>
-                                <NavLink to="/nageen-suite" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Nageen Suite Room</NavLink>
-                                <NavLink to="/premium-lake" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Premium Lake View Room</NavLink>
+                                <NavLink to="/nageen-suite" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Nageen Suite </NavLink>
+                                <NavLink to="/premium-lake" onClick={() => setIsOpen(false)} className="block hover:text-amber-600">Premium Lake View</NavLink>
                             </div>
                         )}
                     </div>

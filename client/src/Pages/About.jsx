@@ -25,7 +25,7 @@ export default function About() {
     return (
         <div className="w-full">
             {/* Hero Section */}
-            <section className="relative h-[80vh] flex items-center justify-center text-center">
+            <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-center justify-center text-center">
                 <img
                     src="About/Hero.jpg"
                     alt="Jewels of Kashmir"
@@ -38,7 +38,7 @@ export default function About() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <h1 className="text-5xl md:text-7xl font-bold text-yellow-400">
+                    <h1 className=" sm:text-2xl md:text-7xl font-bold text-yellow-400">
                         About Jewels of Kashmir
                     </h1>
                     <p className="mt-4 text-lg md:text-2xl text-white max-w-3xl mx-auto">

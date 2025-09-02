@@ -43,7 +43,7 @@ export default function Contact() {
     return (
         <div className="w-full">
             {/* Hero Section */}
-            <section className="relative overflow-hidden w-full h-[300px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-center justify-center text-center">
+            <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-end justify-center text-center">
                 <img
                     src="Contact_Page.jpg"
                     alt="Jewels of Kashmir Houseboat"
@@ -52,20 +52,21 @@ export default function Contact() {
                 <div className="absolute inset-0 bg-black/40" />
 
                 <motion.div
-                    className="relative z-10 max-w-2xl px-4"
+                    className="relative z-10 max-w-2xl px-4 pb-12"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <h1 className="text-4xl md:text-6xl font-bold text-[#f5c934] drop-shadow-lg">
-                        Jewels of Kashmir
+                    <h1 className="text-3xl md:text-5xl font-bold text-[#f5c934] drop-shadow-lg">
+                        Welcome to Contact Page
                     </h1>
-                    <p className="mt-4 text-lg md:text-xl text-white">
-                        Luxury Houseboats on Nigeen Lake, Srinagar
+                    <p className="mt-4 text-lg md:text-xl text-white max-w-xl mx-auto leading-relaxed text-center">
+                        Have a question or need booking help?
+                        Drop us a message — we’re just a click away! 🌴✨
                     </p>
-
                 </motion.div>
             </section>
+
 
             {/* Contact Section */}
             <section className="bg-gradient-to-br from-blue-50 via-yellow-100 to-white min-h-screen flex flex-col items-center justify-center px-4 py-16">

@@ -39,7 +39,7 @@ const TestimonialSlider = ({ TestimonialData }) => {
                         </div>
 
                         {/* Message */}
-                        <div className="p-6 text-center">
+                        <div className="p-3 text-center">
                             <p className="text-gray-700 italic leading-relaxed">
                                 "{guest.message}"
                             </p>

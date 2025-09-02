@@ -7,13 +7,13 @@ export default function Pahalgam() {
     const [openFaq, setOpenFaq] = useState(null);
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-gray-100">
+        <div className="min-h-screen bg-emerald-50">
             {/* HERO: split layout (image + intro) */}
             <header className="relative overflow-hidden">
                 <div className="mx-auto max-w-6xl px-4 py-10 lg:flex lg:items-center lg:gap-8">
                     <div className="lg:w-1/2">
                         <img
-                            src="/Tours/pahalgam_hero.jpg"
+                            src="/Tours/Pahalgam/1.jpeg"
                             alt="Pahalgam valley"
                             className="rounded-2xl w-full object-cover shadow-md h-80 lg:h-[520px]"
                         />
@@ -29,7 +29,7 @@ export default function Pahalgam() {
                         </p>
 
                         <div className="mt-6 flex gap-3">
-                            <Link to="#book" className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white shadow hover:brightness-105">
+                            <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white shadow hover:brightness-105">
                                 Plan & Book
                             </Link>
                             <a href="#itinerary" className="inline-flex items-center gap-2 rounded-full border border-emerald-200 px-5 py-2 text-sm font-semibold text-emerald-700">
@@ -146,7 +146,7 @@ export default function Pahalgam() {
                         </div>
                     </dl>
 
-                    <a href="#book" className="mt-6 inline-block w-full rounded-full bg-emerald-600 px-4 py-2 text-center font-semibold text-white">Start booking</a>
+                    <a href="/contact" className="mt-6 inline-block w-full rounded-full bg-emerald-600 px-4 py-2 text-center font-semibold text-white">Contact Us</a>
                 </aside>
             </section>
 
@@ -172,163 +172,7 @@ export default function Pahalgam() {
                 </div>
             </section>
 
-            {/* CTA Strip */}
-            <section id="book" className="bg-gradient-to-r from-emerald-600 to-emerald-500 py-10 text-center text-white">
-                <h3 className="text-2xl font-bold">Ready to escape to Pahalgam?</h3>
-                <p className="mt-2 text-sm">Custom itineraries, local guides and hassle-free transport — tailored for you.</p>
-                <a className="mt-5 inline-block rounded-full bg-white px-6 py-3 text-emerald-600 font-semibold" href="#">Get started</a>
-            </section>
-        </div>
-    );
-}
 
-export function Sonmarg() {
-    const [openFaq, setOpenFaq] = useState(null);
-
-    return (
-        <div className="min-h-screen bg-gradient-to-b from-sky-50 via-white to-gray-100">
-            {/* Hero: full-bleed with caption cards */}
-            <header className="relative">
-                <img src="/Tours/sonmarg_hero.jpg" alt="Sonmarg" className="w-full h-[520px] object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <div className="absolute left-6 bottom-8 max-w-xl text-white">
-                    <h1 className="text-4xl font-extrabold">Sonmarg — Gateway to the High Himalaya</h1>
-                    <p className="mt-3 text-sm text-white/90">Thajiwas Glacier, river rafting and dramatic mountain passes — perfect for adventure and photographers.</p>
-                    <div className="mt-4 flex gap-3">
-                        <a href="#plans" className="rounded-full bg-yellow-400 px-4 py-2 font-semibold text-black">View Plans</a>
-                        <a href="#activities" className="rounded-full border border-white px-4 py-2 text-white">Activities</a>
-                    </div>
-                </div>
-            </header>
-
-            {/* Feature strip (cards with imagery) */}
-            <section className="mx-auto max-w-6xl px-4 py-8">
-                <div className="grid gap-6 sm:grid-cols-3">
-                    <div className="rounded-2xl overflow-hidden shadow-md">
-                        <img src="/Tours/sonmarg_glacier.jpg" alt="Thajiwas Glacier" className="h-40 w-full object-cover" />
-                        <div className="p-4 bg-white">
-                            <h4 className="font-semibold">Thajiwas Glacier</h4>
-                            <p className="mt-2 text-sm text-gray-600">Short hikes, snowfields and photo ops.</p>
-                        </div>
-                    </div>
-
-                    <div className="rounded-2xl overflow-hidden shadow-md">
-                        <img src="/Tours/sonmarg_rafting.jpg" alt="Rafting" className="h-40 w-full object-cover" />
-                        <div className="p-4 bg-white">
-                            <h4 className="font-semibold">River Rafting</h4>
-                            <p className="mt-2 text-sm text-gray-600">Summer rapids on the Sindh for thrill seekers.</p>
-                        </div>
-                    </div>
-
-                    <div className="rounded-2xl overflow-hidden shadow-md">
-                        <img src="/Tours/sonmarg_pass.jpg" alt="Zoji La" className="h-40 w-full object-cover" />
-                        <div className="p-4 bg-white">
-                            <h4 className="font-semibold">Zoji La Pass</h4>
-                            <p className="mt-2 text-sm text-gray-600">Dramatic drive — route to Ladakh.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Itineraries with choices: family / adventure / photo */}
-            <section id="plans" className="mx-auto max-w-6xl px-4 py-10">
-                <h2 className="text-2xl font-semibold text-gray-800">Curated plans</h2>
-                <div className="mt-6 grid gap-6 lg:grid-cols-3">
-                    <div className="rounded-2xl bg-white p-6 shadow-md">
-                        <h4 className="font-bold">Family-friendly — 2 days</h4>
-                        <p className="mt-2 text-sm text-gray-600">Easy walks, pony rides, glacier visit and comfortable stays.</p>
-                        <ul className="mt-3 text-sm text-gray-600 list-disc list-inside">
-                            <li>Day 1: Drive from Srinagar, Thajiwas visit</li>
-                            <li>Day 2: Leisure, riverbank picnic & return</li>
-                        </ul>
-                    </div>
-
-                    <div className="rounded-2xl bg-white p-6 shadow-md">
-                        <h4 className="font-bold">Adventure — 3 days</h4>
-                        <p className="mt-2 text-sm text-gray-600">Rafting, high-altitude camping and approach to Zoji La.</p>
-                        <ul className="mt-3 text-sm text-gray-600 list-disc list-inside">
-                            <li>Day 1: Arrival & prep</li>
-                            <li>Day 2: Rafting + short hikes</li>
-                            <li>Day 3: Drive to Zoji La viewpoint</li>
-                        </ul>
-                    </div>
-
-                    <div className="rounded-2xl bg-white p-6 shadow-md">
-                        <h4 className="font-bold">Photography — 1–2 days</h4>
-                        <p className="mt-2 text-sm text-gray-600">Golden hour at the glacier, wide-angle mountain vistas and long exposures at dusk.</p>
-                        <p className="mt-3 text-xs text-gray-500">Pack: tripod, polariser, extra batteries.</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Activities block with CTA grid */}
-            <section id="activities" className="mx-auto max-w-6xl px-4 py-10">
-                <h2 className="text-2xl font-semibold">Activities & booking</h2>
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                    <div className="rounded-2xl bg-white p-6 shadow-md">
-                        <h4 className="font-semibold">Thajiwas Glacier Walk</h4>
-                        <p className="mt-2 text-sm text-gray-600">Short guided walk (30–90 mins). Pony rides available for children or long routes.</p>
-                        <a className="mt-4 inline-block rounded-full bg-yellow-400 px-4 py-2 font-semibold" href="#">Book Guide</a>
-                    </div>
-
-                    <div className="rounded-2xl bg-white p-6 shadow-md">
-                        <h4 className="font-semibold">River Rafting Packages</h4>
-                        <p className="mt-2 text-sm text-gray-600">Half-day to full-day packages with safety gear and instructor.</p>
-                        <a className="mt-4 inline-block rounded-full border border-sky-300 px-4 py-2 font-semibold" href="#">Check Availability</a>
-                    </div>
-                </div>
-            </section>
-
-            {/* Safety & travel info */}
-            <section className="mx-auto max-w-6xl px-4 py-10 grid gap-6 lg:grid-cols-3">
-                <div className="rounded-2xl bg-white p-6 shadow-md lg:col-span-2">
-                    <h3 className="text-lg font-semibold">How to reach & safety</h3>
-                    <p className="mt-3 text-sm text-gray-600">Sonmarg is approx 80 km from Srinagar (2–3 hours depending on traffic). Roads are scenic but can be narrow — drive carefully, especially during winter. For high-altitude excursions, hire local drivers experienced with mountain passes.</p>
-
-                    <h4 className="mt-4 font-semibold">Safety Tips</h4>
-                    <ul className="mt-2 text-sm text-gray-600 list-disc list-inside">
-                        <li>Check local weather and road conditions before travel.</li>
-                        <li>Hire certified rafting operators with safety gear.</li>
-                        <li>Keep ID and emergency contacts handy; mobile coverage can be patchy.</li>
-                    </ul>
-                </div>
-
-                <aside className="rounded-2xl bg-white p-6 shadow-md">
-                    <h4 className="font-semibold">Quick facts</h4>
-                    <p className="mt-2 text-sm text-gray-600">Altitude: ~2,800 m (varies by viewpoint)</p>
-                    <p className="mt-2 text-sm text-gray-600">Best time: May–Sep for rafting & trekking</p>
-                    <a href="#activities" className="mt-4 inline-block rounded-full bg-yellow-400 px-4 py-2 font-semibold">Book Activity</a>
-                </aside>
-            </section>
-
-            {/* FAQ */}
-            <section className="mx-auto max-w-6xl px-4 py-12">
-                <div className="rounded-2xl bg-white p-6 shadow-md">
-                    <h3 className="text-lg font-bold">FAQs</h3>
-                    <div className="mt-4 divide-y divide-gray-100">
-                        {[
-                            { q: 'Is Sonmarg suitable for a day trip?', a: 'Yes — many visitors do a day trip from Srinagar, but staying a night gives better sunrise/sunset photo opportunities.' },
-                            { q: 'Are ponies safe for children?', a: 'Yes when hired from registered operators; always check saddles & tack.' },
-                            { q: 'Do I need permits for Zoji La?', a: 'Zoji La is a transit pass to Ladakh; check current local regulations if crossing towards Ladakh.' },
-                        ].map((item, idx) => (
-                            <div key={idx} className="py-3">
-                                <button onClick={() => setOpenFaq(openFaq === idx ? null : idx)} className="flex w-full justify-between text-left">
-                                    <span className="font-medium text-gray-800">{item.q}</span>
-                                    <span className="text-gray-400">{openFaq === idx ? '−' : '+'}</span>
-                                </button>
-                                {openFaq === idx && <p className="mt-2 text-sm text-gray-600">{item.a}</p>}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Footer CTA */}
-            <section className="bg-gradient-to-r from-sky-600 to-sky-500 py-12 text-center text-white">
-                <h3 className="text-2xl font-bold">Make Sonmarg your next adventure</h3>
-                <p className="mt-2 text-sm">Packages that include guides, transfers and activity bookings.</p>
-                <a className="mt-6 inline-block rounded-full bg-white px-6 py-3 text-sky-600 font-semibold" href="#">Customize Trip</a>
-            </section>
         </div>
     );
 }

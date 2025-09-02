@@ -95,7 +95,7 @@ const Nageen_Suite_Room = () => {
                                     <img
                                         src={src}
                                         alt={`Super Deluxe ${index + 1}`}
-                                        className="w-full h-[650px] object-cover rounded-2xl"
+                                        className="w-full  object-cover rounded-2xl"
                                     />
                                 </SwiperSlide>
                             ))}
@@ -213,12 +213,12 @@ const Nageen_Suite_Room = () => {
             {/* CTA */}
             <div className="text-center mt-10">
                 <a
-                    href="https://wa.me/91XXXXXXXXXX?text=Hello,%20I%20want%20to%20book%20the%20Super%20Deluxe%20Houseboat"
+                    href="/contact"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white text-lg font-semibold rounded-xl shadow-lg transition"
                 >
-                    Book Now
+                    Contact Us
                 </a>
             </div>
 

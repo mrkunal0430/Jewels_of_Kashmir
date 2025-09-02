@@ -77,7 +77,7 @@ const AC_Royal_Suite = () => {
             </div>
 
             {/* Image Slider */}
-            <div className="flex flex-col lg:flex-row w-full min-h-screen gap-10">
+            <div className="flex flex-col lg:flex-row w-full min-h-screen gap-10 ">
                 {/* LEFT: Swiper Slider */}
                 <div className="lg:w-1/2 flex justify-center items-center">
                     <div className="w-full max-w-2xl">
@@ -96,7 +96,7 @@ const AC_Royal_Suite = () => {
                                     <img
                                         src={src}
                                         alt={`Super Deluxe ${index + 1}`}
-                                        className="w-full h-[650px] object-cover rounded-2xl"
+                                        className="w-full object-cover rounded-2xl"
                                     />
                                 </SwiperSlide>
                             ))}
@@ -128,7 +128,7 @@ const AC_Royal_Suite = () => {
 
 
             {/* Overview */}
-            <section className="my-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+            <section className="my-8 bg-white rounded-2xl shadow-md p-4 border border-gray-100">
                 <h2 className="text-2xl font-semibold mb-4">Overview</h2>
                 <p className="text-gray-700 leading-relaxed">
                     The Royal Suite is the epitome of luxury on Nigeen Lake.
@@ -142,11 +142,11 @@ const AC_Royal_Suite = () => {
                 </p>
             </section>
 
-            <div className="flex flex-col lg:flex-row w-full min-h-screen gap-10 p-4">
+            <div className="flex flex-col lg:flex-row w-full min-h-screen gap-10 ">
                 {/* Left Side */}
                 <div className="lg:w-1/2 flex flex-col justify-center">
                     {/* Features */}
-                    <section className="mb-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+                    <section className="mb-8 bg-white rounded-2xl shadow-md p-4 border border-gray-100">
                         <h2 className="text-2xl font-semibold mb-4">Features & Amenities</h2>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
                             <li>Spacious rooms with king-size beds</li>
@@ -159,7 +159,7 @@ const AC_Royal_Suite = () => {
                     </section>
 
                     {/* Policies */}
-                    <section className="mb-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+                    <section className="mb-8 bg-white rounded-2xl shadow-md p-4 border border-gray-100">
                         <h2 className="text-2xl font-semibold mb-4">Houseboat Policies</h2>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
                             <li>Check-in: 12:00 PM | Check-out: 11:00 AM</li>
@@ -173,7 +173,7 @@ const AC_Royal_Suite = () => {
 
                 {/* Right Side */}
                 <div className="lg:w-1/2 flex justify-center">
-                    <div className="w-full max-w-lg bg-gradient-to-br from-white via-gray-50 to-yellow-50 rounded-3xl shadow-xl p-8 border border-gray-200">
+                    <div className="w-full max-w-lg bg-gradient-to-br from-white via-gray-50 to-yellow-50 rounded-3xl shadow-xl p-4 border border-gray-200">
                         {/* Title */}
                         <h2 className="text-xl font-bold text-gray-800 tracking-[0.2em] mb-6 uppercase relative">
                             Information
@@ -201,7 +201,7 @@ const AC_Royal_Suite = () => {
                                         <p className="text-sm font-semibold text-gray-900 uppercase tracking-wide">
                                             {item.label}
                                         </p>
-                                        <p className="text-gray-600 text-base whitespace-pre-line group-hover:text-gray-800">
+                                        <p className="text-gray-600 text-base break-words group-hover:text-gray-800">
                                             {item.value}
                                         </p>
                                     </div>
@@ -217,12 +217,12 @@ const AC_Royal_Suite = () => {
             {/* CTA */}
             <div className="text-center mt-10">
                 <a
-                    href="https://wa.me/91XXXXXXXXXX?text=Hello,%20I%20want%20to%20book%20the%20Super%20Deluxe%20Houseboat"
+                    href="/contact"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white text-lg font-semibold rounded-xl shadow-lg transition"
                 >
-                    Book Now
+                    Contact Us
                 </a>
             </div>
 

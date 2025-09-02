@@ -26,7 +26,7 @@ const Home = () => {
                     transition={{ duration: 1 }}
                 >
                     <h1 className="text-4xl md:text-6xl font-bold text-[#f5c934] drop-shadow-lg mb-10">
-                        Feel the <span className='text-black'>Harmony</span>
+                        Feel the <span className=''>Harmony</span>
                     </h1>
 
                     <div className="mt-14 flex justify-center gap-4 ">
@@ -73,10 +73,10 @@ const Home = () => {
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
                             {[
-                                { name: "Super Deluxe", img: "HouseBoats/SuperDeluxe.jpg", path: "/super-deluxe" },
-                                { name: "Royal Suite", img: "HouseBoats/RoyalSuite.jpg", path: "/ac-royal-suite" },
-                                { name: "Premium Lake View", img: "HouseBoats/PremiumLake.jpg", path: "/premium-lake" },
-                                { name: "Nigeen Suite", img: "HouseBoats/NageenLake.jpg", path: "/nageen-lake" },
+                                { name: "Super Deluxe", img: "HouseBoats/SuperDeluxe.jpg", path: "/super-deluxe", desc: "Kashmiri charm with a king bed, plush seating & dressing room" },
+                                { name: "Royal Suite", img: "HouseBoats/RoyalSuite.jpg", path: "/ac-royal-suite", desc: "Elegant suite with modern amenities & stunning lake views" },
+                                { name: "Premium Lake View", img: "HouseBoats/PremiumLake.jpg", path: "/premium-lake", desc: "Spacious room with panoramic views of Nigeen Lake" },
+                                { name: "Nigeen Suite", img: "HouseBoats/NageenLake.jpg", path: "/nageen-lake", desc: "Cozy suite with traditional decor & private balcony" },
                             ].map((boat, idx) => (
                                 <div
                                     key={idx}
@@ -95,10 +95,10 @@ const Home = () => {
                                     </div>
 
                                     {/* Content */}
-                                    <div className="p-5 text-center">
+                                    <div className="p-3 text-center">
                                         <h3 className="text-xl font-bold text-gray-800">{boat.name}</h3>
                                         <p className="text-gray-600">
-                                            dsblf sf a asfhol sf shfhs fhisfh askfh sl.aifhksehf ifheskh
+                                            {boat.desc}
                                         </p>
 
                                         {/* Button */}
@@ -143,7 +143,7 @@ const Home = () => {
                 </section>
 
                 {/* 📝 Testimonials */}
-                <div className='py-10 px-15'>
+                <div className='py-10 px-3'>
                     <TestimonialSlider TestimonialData={TestimonialData} />
                 </div>
                 {/* 📞 Call to Action */}
