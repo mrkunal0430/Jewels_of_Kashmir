@@ -12,14 +12,14 @@ export default function About() {
     const [open, setOpen] = useState(false);
 
     const photos = [
-        { src: "HouseBoats/Nageen_Suite/1.jpg", title: "Golden Sunrise on Nigeen Lake" },
-        { src: "HouseBoats/Nageen_Suite/2.jpg", title: "Shikara Ride Experience" },
-        { src: "HouseBoats/Nageen_Suite/3.jpg", title: "Traditional Kashmiri Interiors" },
-        { src: "HouseBoats/Nageen_Suite/4.jpg", title: "Evening Tea by the Lake" },
-        { src: "HouseBoats/Nageen_Suite/5.jpg", title: "Night View of Houseboats" },
-        { src: "HouseBoats/Nageen_Suite/6.jpg", title: "Local Kashmiri Cuisine" },
-        { src: "HouseBoats/Nageen_Suite/7.jpg", title: "Peaceful Morning View" },
-        { src: "HouseBoats/Nageen_Suite/8.jpg", title: "Traditional Wooden Artwork" },
+        { src: "HouseBoats/Nageen_Suite/1.webp", title: "Golden Sunrise on Nigeen Lake" },
+        { src: "HouseBoats/Nageen_Suite/2.webp", title: "Shikara Ride Experience" },
+        { src: "HouseBoats/Nageen_Suite/3.webp", title: "Traditional Kashmiri Interiors" },
+        { src: "HouseBoats/Nageen_Suite/4.webp", title: "Evening Tea by the Lake" },
+        { src: "HouseBoats/Nageen_Suite/5.webp", title: "Night View of Houseboats" },
+        { src: "HouseBoats/Nageen_Suite/6.webp", title: "Local Kashmiri Cuisine" },
+        { src: "HouseBoats/Nageen_Suite/7.webp", title: "Peaceful Morning View" },
+        { src: "HouseBoats/Nageen_Suite/8.webp", title: "Traditional Wooden Artwork" },
     ];
 
     return (
@@ -27,9 +27,10 @@ export default function About() {
             {/* Hero Section */}
             <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-center justify-center text-center">
                 <img
-                    src="About/Hero.jpg"
+                    src="About/Hero.webp"
                     alt="Jewels of Kashmir"
                     className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/50" />
                 <motion.div
@@ -59,11 +60,14 @@ export default function About() {
                     Our Story
                 </motion.h2>
                 <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                    Jewels of Kashmir is more than just a houseboat or homestay service —
-                    it’s a gateway into the heart of Kashmir. Nestled on the serene waters
-                    of Nigeen Lake, we offer travelers a perfect blend of tradition and
-                    modern hospitality. From warm Kashmiri food to cultural experiences,
-                    we ensure every guest takes back memories, not just photographs.
+                    An enthusiastic family of locals who are determined to add charm to the Kashmir tour with
+                    a comfortable houseboat stay for every traveller.
+                    The legacy of these ancient houseboats is <strong>passed on to 5 generations.</strong>
+                    With decades into the hospitality business, <strong>this enterprise inherits its cultural leverage via
+                        Mr Mohammad Wangnoo and his Sons.</strong>
+                    In the early nineteenth century, the Wangnoo household had been forerunners in
+                    developing this new phenomenon and constructed their own boats.
+                    To date, we dedicate our utmost efforts to give the most valuable service to our customers.
                 </p>
             </section>
 
@@ -112,20 +116,20 @@ export default function About() {
                 <div className="mt-12 space-y-12">
                     {[
                         {
-                            year: "2010",
-                            text: "Started with a vision to showcase Kashmir’s heritage through stays on Nigeen Lake.",
+                            year: "Early 19th Century",
+                            text: "The Wangnoo family pioneered the tradition of houseboats in Kashmir, crafting vessels that carried the elegance and charm of Kashmiri heritage.",
                         },
                         {
-                            year: "2015",
-                            text: "Expanded into curated tours and cultural experiences for our guests.",
+                            year: "Generations of Legacy",
+                            text: "For five generations, our family has preserved and nurtured this legacy, blending culture, hospitality, and the art of hosting into every experience.",
                         },
                         {
-                            year: "2020",
-                            text: "Upgraded facilities to blend luxury with tradition while keeping sustainability in focus.",
+                            year: "Hospitality Roots",
+                            text: "With decades in the hospitality business, guided by Mr. Mohammad Wangnoo and his sons, we have built a name that represents trust, warmth, and cultural richness.",
                         },
                         {
-                            year: "Now",
-                            text: "Recognized as one of the most trusted and unique homestay providers in Kashmir.",
+                            year: "Moving Forward",
+                            text: "Jewels of Kashmir stands as one of the most unique and reliable homestay providers in the valley — offering houseboat stays, Shikara rides, and curated experiences that let every traveler feel the true spirit of Kashmir.",
                         },
                     ].map((item, index) => (
                         <motion.div
@@ -135,7 +139,7 @@ export default function About() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="bg-yellow-400 text-white px-6 py-3 rounded-full shadow-lg font-bold text-lg">
+                            <div className="w-60 bg-yellow-400 text-white px-6 py-3 rounded-full shadow-lg font-bold text-lg">
                                 {item.year}
                             </div>
                             <p className="text-gray-700 text-lg max-w-3xl">{item.text}</p>

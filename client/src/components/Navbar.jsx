@@ -81,9 +81,10 @@ export default function Navbar() {
                 {/* Center Brand */}
                 <div className="flex items-center">
                     <img
-                        src="/Logo/Logo.jpg"
+                        src="/Logo/Logo.webp"
                         alt="Jewel of Kashmir"
                         className="h-12 w-auto md:h-14 lg:h-16 object-contain"
+                        loading="lazy"
                     />
                 </div>
 

@@ -9,14 +9,14 @@ import { Utensils, Monitor, Wifi, Eye, Sun, Trees, Briefcase, BedDouble, Bath, M
 
 const SuperDeluxe = () => {
     const images = [
-        "HouseBoats/Premium_Lake_View/1.jpeg",
-        "HouseBoats/Premium_Lake_View/2.jpeg",
-        "HouseBoats/Premium_Lake_View/3.jpeg",
-        "HouseBoats/Premium_Lake_View/4.jpeg",
-        "HouseBoats/Premium_Lake_View/5.jpeg",
-        "HouseBoats/Premium_Lake_View/6.jpeg",
-        "HouseBoats/Premium_Lake_View/7.jpeg",
-        "HouseBoats/Premium_Lake_View/8.jpeg",
+        "HouseBoats/Premium_Lake_View/1.webp",
+        "HouseBoats/Premium_Lake_View/2.webp",
+        "HouseBoats/Premium_Lake_View/3.webp",
+        "HouseBoats/Premium_Lake_View/4.webp",
+        "HouseBoats/Premium_Lake_View/5.webp",
+        "HouseBoats/Premium_Lake_View/6.webp",
+        "HouseBoats/Premium_Lake_View/7.webp",
+        "HouseBoats/Premium_Lake_View/8.webp",
 
     ];
 
@@ -95,7 +95,8 @@ const SuperDeluxe = () => {
                                     <img
                                         src={src}
                                         alt={`Super Deluxe ${index + 1}`}
-                                        className="w-full object-cover rounded-2xl"
+                                        className="webpll object-cover rounded-2xl"
+                                        loading="lazy"
                                     />
                                 </SwiperSlide>
                             ))}

@@ -9,7 +9,7 @@ export default function Tour() {
         {
             name: "Gulmarg",
             path: "/tour/gulmarg",
-            img: "Tours/Gulmarg/gulmarg.jpg",
+            img: "Tours/Gulmarg/gulmarg.webp",
             blurb:
                 "Snow-kissed meadows, pine forests, and the iconic Gulmarg Gondola. Perfect for skiing in winter and lush hikes in summer.",
             highlights: ["Gondola Ride", "Skiing", "Apharwat Peak"],
@@ -19,7 +19,7 @@ export default function Tour() {
         {
             name: "Pahalgam",
             path: "/tour/pahalgam",
-            img: "Tours/Pahalgam/pahalgam.jpg",
+            img: "Tours/Pahalgam/pahalgam.webp",
             blurb:
                 "Riverside charm along the Lidder, verdant valleys, and jaw-dropping trails to Betaab & Aru valleys.",
             highlights: ["Lidder River", "Betaab Valley", "Aru Valley"],
@@ -29,7 +29,7 @@ export default function Tour() {
         {
             name: "Sonmarg",
             path: "/tour/sonmarg",
-            img: "Tours/Sonmarg/sonmarg.jpg",
+            img: "Tours/Sonmarg/sonmarg.webp",
             blurb:
                 "‘Meadow of Gold’ with glaciers, turquoise streams, and routes that open the door to Ladakh.",
             highlights: ["Thajiwas Glacier", "Zoji La", "River Rafting"],
@@ -44,9 +44,10 @@ export default function Tour() {
             <section className="relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="Tours/Tour_Main.jpg" // replace with your asset path
+                        src="Tours/Tour_Main.webp"
                         alt="Kashmir mountains and lake"
                         className="h-72 w-full object-cover"
+                        loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 </div>

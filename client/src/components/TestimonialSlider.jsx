@@ -30,6 +30,7 @@ const TestimonialSlider = ({ TestimonialData }) => {
                                 src={guest.image}
                                 alt={guest.name}
                                 className="w-full h-full object-cover"
+                                loading="lazy"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                             <div className="absolute bottom-4 left-4 text-white">

@@ -9,13 +9,13 @@ import { Utensils, Monitor, Wifi, Eye, Sun, Trees, Briefcase, BedDouble, Bath, M
 
 const Nageen_Suite_Room = () => {
     const images = [
-        "HouseBoats/Nageen_Suite/1.jpg",
-        "HouseBoats/Nageen_Suite/2.jpg",
-        "HouseBoats/Nageen_Suite/3.jpg",
-        "HouseBoats/Nageen_Suite/4.jpg",
-        "HouseBoats/Nageen_Suite/5.jpg",
-        "HouseBoats/Nageen_Suite/6.jpg",
-        "HouseBoats/Nageen_Suite/7.jpg",
+        "HouseBoats/Nageen_Suite/1.webp",
+        "HouseBoats/Nageen_Suite/2.webp",
+        "HouseBoats/Nageen_Suite/3.webp",
+        "HouseBoats/Nageen_Suite/4.webp",
+        "HouseBoats/Nageen_Suite/5.webp",
+        "HouseBoats/Nageen_Suite/6.webp",
+        "HouseBoats/Nageen_Suite/7.webp",
 
 
     ];
@@ -96,6 +96,7 @@ const Nageen_Suite_Room = () => {
                                         src={src}
                                         alt={`Super Deluxe ${index + 1}`}
                                         className="w-full  object-cover rounded-2xl"
+                                        loading="lazy"
                                     />
                                 </SwiperSlide>
                             ))}

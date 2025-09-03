@@ -14,6 +14,7 @@ const Home = () => {
                     loop
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover z-10"
+                    loading="lazy"
                 >
                     <source src="/Home_Vedio.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -73,10 +74,10 @@ const Home = () => {
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
                             {[
-                                { name: "Super Deluxe", img: "HouseBoats/SuperDeluxe.jpg", path: "/super-deluxe", desc: "Kashmiri charm with a king bed, plush seating & dressing room" },
-                                { name: "Royal Suite", img: "HouseBoats/RoyalSuite.jpg", path: "/ac-royal-suite", desc: "Elegant suite with modern amenities & stunning lake views" },
-                                { name: "Premium Lake View", img: "HouseBoats/PremiumLake.jpg", path: "/premium-lake", desc: "Spacious room with panoramic views of Nigeen Lake" },
-                                { name: "Nigeen Suite", img: "HouseBoats/NageenLake.jpg", path: "/nageen-lake", desc: "Cozy suite with traditional decor & private balcony" },
+                                { name: "Super Deluxe", img: "HouseBoats/SuperDeluxe.webp", path: "/super-deluxe", desc: "Kashmiri charm with a king bed, plush seating & dressing room" },
+                                { name: "Royal Suite", img: "HouseBoats/RoyalSuite.webp", path: "/ac-royal-suite", desc: "Elegant suite with modern amenities & stunning lake views" },
+                                { name: "Premium Lake View", img: "HouseBoats/PremiumLake.webp", path: "/premium-lake", desc: "Spacious room with panoramic views of Nigeen Lake" },
+                                { name: "Nigeen Suite", img: "HouseBoats/NageenLake.webp", path: "/nageen-lake", desc: "Cozy suite with traditional decor & private balcony" },
                             ].map((boat, idx) => (
                                 <div
                                     key={idx}
@@ -87,6 +88,7 @@ const Home = () => {
                                             src={boat.img}
                                             alt="Super Deluxe"
                                             className="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
                                         />
                                         {/* Overlay */}
                                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">

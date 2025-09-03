@@ -13,7 +13,7 @@ export default function BlogPage() {
             title: "Experience the Magic of Nigeen Lake",
             excerpt:
                 "Why Nigeen Lake is called the ‘Jewel in the Ring of Kashmir’ and how to make the most of your stay here.",
-            image: "Blog/hero_child.jpg",
+            image: "Blog/hero_child.webp",
             category: "Destinations",
             link: "/blog/nigeen-lake",
         },
@@ -22,7 +22,7 @@ export default function BlogPage() {
             title: "Top 5 Things to Do in a Houseboat Stay",
             excerpt:
                 "From sipping Kahwa at sunrise to stargazing at night, here’s how to create memories on a houseboat.",
-            image: "Blog/5things.jpg",
+            image: "Blog/5things.webp",
             category: "Experiences",
             link: "/blog/houseboat-stay",
         },
@@ -31,7 +31,7 @@ export default function BlogPage() {
             title: "Kashmiri Cuisine: A Food Lover’s Guide",
             excerpt:
                 "Explore Rogan Josh, Gushtaba, and the world-famous Wazwan – a feast for the senses.",
-            image: "Blog/Cuisine.png",
+            image: "Blog/Cuisine.webp",
             category: "Food & Culture",
             link: "/blog/kashmiri-food",
         },
@@ -40,7 +40,7 @@ export default function BlogPage() {
             title: "A Journey Through Gulmarg",
             excerpt:
                 "Discover why Gulmarg is a year-round paradise for skiers and trekkers alike.",
-            image: "Blog/Gulmarg.jpg",
+            image: "Blog/Gulmarg.webp",
             category: "Destinations",
             link: "/blog/gulmarg",
         },
@@ -49,7 +49,7 @@ export default function BlogPage() {
             title: "Hidden Gems of Srinagar",
             excerpt:
                 "Uncover offbeat experiences and lesser-known attractions in Srinagar.",
-            image: "Blog/Hidden_gem.jpg",
+            image: "Blog/Hidden_gem.webp",
             category: "Travel Tips",
             link: "/blog/srinagar-gems",
         },
@@ -58,7 +58,7 @@ export default function BlogPage() {
             title: "The Enchanting Gardens of Kashmir",
             excerpt:
                 "Walk through Shalimar, Nishat, and Chashme Shahi — Mughal-era gardens that tell timeless stories.",
-            image: "Blog/Garden.jpg",
+            image: "Blog/Garden.webp",
             category: "Culture",
             link: "/blog/kashmir-gardens",
         },
@@ -71,7 +71,7 @@ export default function BlogPage() {
             {/* Hero Section */}
             <section
                 className="relative h-[40vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center text-center bg-cover bg-center"
-                style={{ backgroundImage: "url('Blog/hero.png')" }}
+                style={{ backgroundImage: "url('Blog/hero.webp')" }}
             >
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative z-10 text-white max-w-2xl px-4">
@@ -102,6 +102,7 @@ export default function BlogPage() {
                             src={posts[0].image}
                             alt={posts[0].title}
                             className="w-full h-56 sm:h-64 md:h-80 lg:h-96 object-cover"
+                            loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                         <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 text-white max-w-lg px-2">

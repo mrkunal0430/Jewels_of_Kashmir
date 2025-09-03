@@ -45,9 +45,10 @@ export default function Contact() {
             {/* Hero Section */}
             <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-end justify-center text-center">
                 <img
-                    src="Contact_Page.jpg"
+                    src="Contact_Page.webp"
                     alt="Jewels of Kashmir Houseboat"
                     className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/40" />
 
@@ -62,7 +63,7 @@ export default function Contact() {
                     </h1>
                     <p className="mt-4 text-lg md:text-xl text-white max-w-xl mx-auto leading-relaxed text-center">
                         Have a question or need booking help?
-                        Drop us a message — we’re just a click away! 🌴✨
+                        Drop us a message — we’re just a click away! 🗓️✨
                     </p>
                 </motion.div>
             </section>
@@ -74,7 +75,7 @@ export default function Contact() {
                 <div className="flex flex-col justify-center items-center gap-6 mb-12 text-center">
                     <h1 className="font-bold text-4xl md:text-5xl text-gray-800">Contact Us</h1>
                     <p className="text-lg md:text-xl text-gray-600 max-w-3xl">
-                        From your first message to your final farewell, the Jewels of Kashmir team is here to make every moment special. Contact us today and step into a world of elegance and comfort.
+                        From the moment you connect with us, the Jewels of Kashmir team is here to make every experience special. Reach out today and step into a world of elegance and comfort you’ll always return to
                     </p>
                 </div>
 

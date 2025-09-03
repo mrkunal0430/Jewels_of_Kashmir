@@ -9,13 +9,13 @@ import { Utensils, Monitor, Wifi, Eye, Sun, Trees, Briefcase, BedDouble, Bath, M
 
 const Super_Deluxe = () => {
     const images = [
-        "HouseBoats/Super_Deluxe/1.jpeg",
-        "HouseBoats/Super_Deluxe/2.jpeg",
-        "HouseBoats/Super_Deluxe/3.jpeg",
-        "HouseBoats/Super_Deluxe/4.jpeg",
-        "HouseBoats/Super_Deluxe/5.jpeg",
-        "HouseBoats/Super_Deluxe/6.jpeg",
-        "HouseBoats/Super_Deluxe/7.jpeg",
+        "HouseBoats/Super_Deluxe/1.webp",
+        "HouseBoats/Super_Deluxe/2.webp",
+        "HouseBoats/Super_Deluxe/3.webp",
+        "HouseBoats/Super_Deluxe/4.webp",
+        "HouseBoats/Super_Deluxe/5.webp",
+        "HouseBoats/Super_Deluxe/6.webp",
+        "HouseBoats/Super_Deluxe/7.webp",
 
 
     ];
@@ -96,6 +96,7 @@ const Super_Deluxe = () => {
                                         src={src}
                                         alt={`Super Deluxe ${index + 1}`}
                                         className="w-full  object-cover rounded-2xl"
+                                        loading="lazy"
                                     />
                                 </SwiperSlide>
                             ))}

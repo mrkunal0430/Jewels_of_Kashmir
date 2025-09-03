@@ -9,15 +9,15 @@ import { Utensils, Monitor, Wifi, Eye, Sun, Trees, Briefcase, BedDouble, Bath, M
 
 const AC_Royal_Suite = () => {
     const images = [
-        "HouseBoats/Royal_Suite/1.jpeg",
-        "HouseBoats/Royal_Suite/2.jpeg",
-        "HouseBoats/Royal_Suite/3.jpeg",
-        "HouseBoats/Royal_Suite/4.jpeg",
-        "HouseBoats/Royal_Suite/5.jpeg",
-        "HouseBoats/Royal_Suite/6.jpeg",
-        "HouseBoats/Royal_Suite/7.jpeg",
-        "HouseBoats/Royal_Suite/8.jpeg",
-        "HouseBoats/Royal_Suite/9.jpeg",
+        "HouseBoats/Royal_Suite/1.webp",
+        "HouseBoats/Royal_Suite/2.webp",
+        "HouseBoats/Royal_Suite/3.webp",
+        "HouseBoats/Royal_Suite/4.webp",
+        "HouseBoats/Royal_Suite/5.webp",
+        "HouseBoats/Royal_Suite/6.webp",
+        "HouseBoats/Royal_Suite/7.webp",
+        "HouseBoats/Royal_Suite/8.webp",
+        "HouseBoats/Royal_Suite/9.webp",
 
     ];
 
@@ -97,6 +97,7 @@ const AC_Royal_Suite = () => {
                                         src={src}
                                         alt={`Super Deluxe ${index + 1}`}
                                         className="w-full object-cover rounded-2xl"
+                                        loading="lazy"
                                     />
                                 </SwiperSlide>
                             ))}

@@ -11,9 +11,10 @@ export default function Gulmarg() {
                 <div className="mx-auto max-w-6xl px-4 py-10 lg:flex lg:items-center lg:gap-8">
                     <div className="lg:w-1/2">
                         <img
-                            src="/Tours/Gulmarg/1.jpg"
+                            src="/Tours/Gulmarg/1.webp"
                             alt="Gulmarg valley"
                             className="rounded-2xl w-full object-cover shadow-md h-80 lg:h-[520px]"
+                            loading="lazy"
                         />
                     </div>
 
