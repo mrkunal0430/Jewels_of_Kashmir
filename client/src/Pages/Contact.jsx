@@ -1,8 +1,7 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaWhatsapp, FaYoutube, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import mmtLogo from "../assets/makemytrip.svg";
+
 
 
 export default function Contact() {
@@ -58,7 +57,7 @@ export default function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <h1 className="text-3xl md:text-5xl font-bold text-[#f5c934] drop-shadow-lg">
+                    <h1 className="text-2xl md:text-5xl font-bold text-[#f5c934] drop-shadow-lg">
                         Welcome to Contact Page
                     </h1>
                     <p className="mt-4 text-lg md:text-xl text-white max-w-xl mx-auto leading-relaxed text-center">
@@ -83,7 +82,7 @@ export default function Contact() {
                 <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-2xl overflow-hidden">
 
                     {/* Left - Contact Info */}
-                    <div className="bg-gradient-to-br from-yellow-600 to-yellow-400 text-white p-8 flex flex-col justify-between">
+                    <div className="bg-gradient-to-br from-yellow-600 to-yellow-400 text-white p-6 flex flex-col justify-between">
                         <div>
                             <h2 className="text-3xl font-bold mb-3">Get in Touch</h2>
                             <p className="mb-4">

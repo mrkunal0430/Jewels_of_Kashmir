@@ -24,7 +24,7 @@ export default function BlogPage() {
                 "From sipping Kahwa at sunrise to stargazing at night, here’s how to create memories on a houseboat.",
             image: "Blog/5things.webp",
             category: "Experiences",
-            link: "/blog/houseboat-stay",
+            link: "/blog/things-to-do-in-a-houseboat-stay",
         },
         {
             id: 3,
@@ -33,7 +33,7 @@ export default function BlogPage() {
                 "Explore Rogan Josh, Gushtaba, and the world-famous Wazwan – a feast for the senses.",
             image: "Blog/Cuisine.webp",
             category: "Food & Culture",
-            link: "/blog/kashmiri-food",
+            link: "/blog/kashmiri-cuisine",
         },
         {
             id: 4,
@@ -42,7 +42,7 @@ export default function BlogPage() {
                 "Discover why Gulmarg is a year-round paradise for skiers and trekkers alike.",
             image: "Blog/Gulmarg.webp",
             category: "Destinations",
-            link: "/blog/gulmarg",
+            link: "/tour/gulmarg",
         },
         {
             id: 5,
@@ -51,7 +51,7 @@ export default function BlogPage() {
                 "Uncover offbeat experiences and lesser-known attractions in Srinagar.",
             image: "Blog/Hidden_gem.webp",
             category: "Travel Tips",
-            link: "/blog/srinagar-gems",
+            link: "/blog/kashmir-gems",
         },
         {
             id: 6,
@@ -125,7 +125,7 @@ export default function BlogPage() {
                     </motion.div>
 
                     {/* Blog Slider */}
-                    <div>
+                    <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md">
                         <Swiper
                             modules={[Autoplay]}
                             spaceBetween={16}
@@ -140,18 +140,20 @@ export default function BlogPage() {
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 2 },
                             }}
+
                         >
                             {posts.slice(1).map((post) => (
                                 <SwiperSlide key={post.id}>
                                     <motion.div
                                         whileHover={{ y: -5 }}
-                                        className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col"
+                                        className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col my-2"
                                     >
                                         <div className="h-40 sm:h-48 md:h-52 overflow-hidden">
                                             <img
                                                 src={post.image}
                                                 alt={post.title}
                                                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                                                loading="lazy"
                                             />
                                         </div>
                                         <div className="p-4 sm:p-5 flex-1 flex flex-col">

@@ -9,3 +9,6 @@ build/
 # system files
 .DS_Store
 Thumbs.db
+
+# report files
+stats.html

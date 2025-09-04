@@ -1,21 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './Pages/Home';
-import AcRoyalSuite from './Pages/Rooms/AC_Royal_Suite';
-import SuperDeluxe from './Pages/Rooms/Super_Deluxe';
-import PremiumLake from './Pages/Rooms/Premium_Lake_View';
-import NageenSuite from './Pages/Rooms/Nageen_Suite_Room';
-import Tours from './Pages/Tours/Tours';
-import Gulmarg from './Pages/Tours/Gulmarg';
-import Pahalgam from './Pages/Tours/Pahalgam';
-import Sonmarg from './Pages/Tours/Sonmarg';
-import About from './Pages/About';
-import Blog from './Pages/Blog';
-import Contact from './Pages/Contact';
 import Footer from './components/Footer';
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// Lazy load the page components
+const Home = lazy(() => import('./Pages/Home'));
+const AcRoyalSuite = lazy(() => import('./Pages/Rooms/AC_Royal_Suite'));
+const SuperDeluxe = lazy(() => import('./Pages/Rooms/Super_Deluxe'));
+const PremiumLake = lazy(() => import('./Pages/Rooms/Premium_Lake_View'));
+const NageenSuite = lazy(() => import('./Pages/Rooms/Nageen_Suite_Room'));
+const Tours = lazy(() => import('./Pages/Tours/Tours'));
+const Gulmarg = lazy(() => import('./Pages/Tours/Gulmarg'));
+const Pahalgam = lazy(() => import('./Pages/Tours/Pahalgam'));
+const Sonmarg = lazy(() => import('./Pages/Tours/Sonmarg'));
+const About = lazy(() => import('./Pages/About'));
+const Blog = lazy(() => import('./Pages/Blog/Blog'));
+const Contact = lazy(() => import('./Pages/Contact'));
+const NageenLake = lazy(() => import('./Pages/Blog/NigeenLake'));
+const ThingsToDo = lazy(() => import('./Pages/Blog/ThingsToDo'));
+const KashmiriCuisine = lazy(() => import('./Pages/Blog/KashmiriCuisine'));
+const KashmirGems = lazy(() => import('./Pages/Blog/KashmirGems'));
+const KashmirGardens = lazy(() => import('./Pages/Blog/KashmirGarden'));
 
 
 function App() {
@@ -30,34 +37,42 @@ function App() {
     });
     AOS.refresh(); // 👈 helps when route/page changes
   }, []);
+
   return (
     <>
       <Navbar />
-      {/* <Route path="/" element={<Navbar />} /> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
+          {/* Houseboats */}
+          <Route path="/ac-royal-suite" element={<AcRoyalSuite />} />
+          <Route path="/super-deluxe" element={<SuperDeluxe />} />
+          <Route path="/premium-lake" element={<PremiumLake />} />
+          <Route path="/nageen-suite" element={<NageenSuite />} />
 
-        {/* Houseboats */}
-        <Route path="/ac-royal-suite" element={<AcRoyalSuite />} />
-        <Route path="/super-deluxe" element={<SuperDeluxe />} />
-        <Route path="/premium-lake" element={<PremiumLake />} />
-        <Route path="/nageen-suite" element={<NageenSuite />} />
+          {/* Tours */}
+          <Route path="/tour" element={<Tours />} />
+          <Route path="/tour/gulmarg" element={<Gulmarg />} />
+          <Route path="/tour/pahalgam" element={<Pahalgam />} />
+          <Route path="/tour/sonmarg" element={<Sonmarg />} />
 
-        {/* Tours */}
-        <Route path="/tour" element={<Tours />} />
-        <Route path="/tour/gulmarg" element={<Gulmarg />} />
-        <Route path="/tour/pahalgam" element={<Pahalgam />} />
-        <Route path="/tour/sonmarg" element={<Sonmarg />} />
+          {/* About */}
+          <Route path="/about" element={<About />} />
 
-        {/* About */}
-        <Route path="/about" element={<About />} />
+          {/* Blog */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/nigeen-lake" element={<NageenLake />} />
+          <Route path="/blog/things-to-do-in-a-houseboat-stay" element={<ThingsToDo />} />
+          <Route path="/blog/kashmiri-cuisine" element={<KashmiriCuisine />} />
+          <Route path="/blog/kashmir-gems" element={<KashmirGems />} />
+          <Route path="/blog/kashmir-gardens" element={<KashmirGardens />} />
 
 
-        <Route path="/blog" element={<Blog />} />
-        {/* Contact */}
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+          {/* Contact */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </>
   )

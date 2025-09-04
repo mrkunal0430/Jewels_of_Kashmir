@@ -14,7 +14,7 @@ const Home = () => {
                     loop
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover z-10"
-                    loading="lazy"
+                    preload="none"
                 >
                     <source src="/Home_Vedio.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
