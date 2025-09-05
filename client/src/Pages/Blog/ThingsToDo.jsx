@@ -7,31 +7,31 @@ export default function HouseboatThings() {
             icon: <Ship className="w-8 h-8 text-blue-600" />,
             title: "Enjoy a Shikara Ride",
             desc: "Glide across Dal Lake or Nigeen Lake in a traditional Shikara. Early mornings and sunsets offer magical views of floating gardens and local life.",
-            img: "/Blog/Houseboat/shikara.jpg",
+            img: "/Blog/ThingsToDo/1.webp",
         },
         {
             icon: <Coffee className="w-8 h-8 text-yellow-600" />,
             title: "Sip Kashmiri Kahwa on the Deck",
             desc: "Relax on your houseboat balcony with a hot cup of saffron-infused Kahwa while soaking in serene lake views.",
-            img: "/Blog/Houseboat/kahwa.jpg",
+            img: "/Blog/ThingsToDo/2.webp",
         },
         {
             icon: <Camera className="w-8 h-8 text-purple-600" />,
             title: "Capture the Sunrise & Sunset",
             desc: "The golden hues of sunrise and sunset reflecting on the calm waters make for unforgettable photography moments.",
-            img: "/Blog/Houseboat/sunset.jpg",
+            img: "/Blog/ThingsToDo/3.webp",
         },
         {
             icon: <Utensils className="w-8 h-8 text-red-600" />,
             title: "Relish Authentic Kashmiri Cuisine",
             desc: "Feast on Rogan Josh, Yakhni, Gushtaba, and other delicacies — a true Kashmiri Wazwan experience on the water.",
-            img: "/Blog/Houseboat/food.jpg",
+            img: "/Blog/ThingsToDo/4.webp",
         },
         {
             icon: <Star className="w-8 h-8 text-indigo-600" />,
             title: "Stargaze from the Balcony",
             desc: "At night, step onto the deck and witness a starlit Kashmiri sky with cool breezes and the lake’s calm reflection.",
-            img: "/Blog/Houseboat/stars.jpg",
+            img: "/Blog/ThingsToDo/5.webp",
         },
     ];
 
@@ -53,19 +53,16 @@ export default function HouseboatThings() {
             {/* Hero */}
             <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
                 <img
-                    src="/Blog/Houseboat/hero.jpg"
+                    src="/Blog/ThingsToDo/Hero.webp"
                     alt="Houseboat Experience Kashmir"
                     className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[3000ms] hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/60" />
+
                 <div className="relative z-10 text-white px-4">
-                    <h1 className="text-4xl md:text-6xl font-bold animate-fadeIn">
+                    <h1 className="text-black text-4xl md:text-6xl font-bold animate-fadeIn">
                         5 Things to Do on a Houseboat
                     </h1>
-                    <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto animate-fadeIn delay-200">
-                        Experience the magic of Kashmiri houseboats with these unforgettable
-                        activities.
-                    </p>
+
                 </div>
             </section>
 

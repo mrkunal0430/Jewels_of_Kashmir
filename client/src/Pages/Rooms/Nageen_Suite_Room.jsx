@@ -139,11 +139,11 @@ const Nageen_Suite_Room = () => {
                 </p>
             </section>
 
-            <div className="flex flex-col lg:flex-row w-full min-h-screen gap-10 p-4">
+            <div className="flex flex-col lg:flex-row w-full min-h-screen gap-10">
                 {/* Left Side */}
                 <div className="lg:w-1/2 flex flex-col justify-center">
                     {/* Features */}
-                    <section className="mb-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+                    <section className="mb-8 bg-white rounded-2xl shadow-md p-4 border border-gray-100">
                         <h2 className="text-2xl font-semibold mb-4">Features & Amenities</h2>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
                             <li>Spacious rooms with king-size beds</li>
@@ -156,7 +156,7 @@ const Nageen_Suite_Room = () => {
                     </section>
 
                     {/* Policies */}
-                    <section className="mb-8 bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+                    <section className="mb-8 bg-white rounded-2xl shadow-md p-4 border border-gray-100">
                         <h2 className="text-2xl font-semibold mb-4">Houseboat Policies</h2>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
                             <li>Check-in: 12:00 PM | Check-out: 11:00 AM</li>
@@ -170,7 +170,7 @@ const Nageen_Suite_Room = () => {
 
                 {/* Right Side */}
                 <div className="lg:w-1/2 flex justify-center">
-                    <div className="w-full max-w-lg bg-gradient-to-br from-white via-gray-50 to-yellow-50 rounded-3xl shadow-xl p-8 border border-gray-200">
+                    <div className="w-full max-w-lg bg-gradient-to-br from-white via-gray-50 to-yellow-50 rounded-3xl shadow-xl p-4 border border-gray-200">
                         {/* Title */}
                         <h2 className="text-xl font-bold text-gray-800 tracking-[0.2em] mb-6 uppercase relative">
                             Information

@@ -21,7 +21,7 @@ export default function NigeenLake() {
             {/* Hero Section */}
             <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)] flex justify-center items-center text-center">
                 <img
-                    src="/Blog/NageenLake.webp"
+                    src="/Blog/Nageen/NageenLake.webp"
                     alt="Nigeen Lake Kashmir"
                     className="absolute inset-0 w-full h-full object-cover"
                 />

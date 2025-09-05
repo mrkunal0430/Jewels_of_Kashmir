@@ -8,16 +8,26 @@ const Home = () => {
     return (
         <div className=''>
             <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)] overflow-hidden flex justify-center items-center text-center">
+                {/* In <head> you can optionally hint preload for WebM (only if you’re sure this is the final source): */}
+                {/* <link rel="preload" as="video" href="/Home/Home_Video.webm" type="video/webm" /> */}
+
                 <video
                     autoPlay
                     muted
                     loop
                     playsInline
-                    className="absolute top-0 left-0 w-full h-full object-cover z-10"
-                    preload="none"
+                    preload="metadata"
+                    poster="/Home/Home_Poster.webp"         // small, optimized poster (AVIF/WebP)
+                    width={1920}                            // intrinsic size to reduce CLS
+                    height={1080}
+                    aria-hidden="true"                      // decorative background
+                    tabIndex={-1}
+                    className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
                 >
-                    <source src="/Home_Vedio.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
+                    {/* Prefer AV1 or VP9 when available, then MP4 as a fallback */}
+                    <source src="/Home/Home_Vedio.webm" type='video/webm' />
+                    <source src="/Home/Home_Vedio.mp4" type='video/mp4' />
+                    {/* No controls text needed because aria-hidden + no controls */}
                 </video>
 
                 <motion.div

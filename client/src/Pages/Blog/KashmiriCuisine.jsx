@@ -7,31 +7,31 @@ export default function KashmirCuisine() {
             icon: <Utensils className="w-8 h-8 text-red-600" />,
             title: "Wazwan – The Royal Feast",
             desc: "Wazwan is the pride of Kashmiri cuisine, a grand multi-course meal that includes dishes like Rogan Josh, Gushtaba, Yakhni, and Tabak Maaz. Traditionally served at weddings, it represents Kashmiri hospitality at its finest.",
-            img: "/Blog/Cuisine/wazwan.jpg",
+            img: "/Blog/KashmirCuisine/1.webp",
         },
         {
             icon: <Soup className="w-8 h-8 text-yellow-600" />,
             title: "Nadur Yakhni",
             desc: "A light and flavorful dish made with lotus stem cooked in a yogurt-based curry, spiced delicately to preserve its natural taste. It’s a healthy and comforting Kashmiri delicacy.",
-            img: "/Blog/Cuisine/nadur-yakhni.jpg",
+            img: "/Blog/KashmirCuisine/2.webp",
         },
         {
             icon: <Coffee className="w-8 h-8 text-amber-600" />,
             title: "Kashmiri Kahwa",
             desc: "A saffron-infused green tea brewed with spices, almonds, and sometimes honey. This aromatic drink warms you up on cold days and is a must-try when visiting Kashmir.",
-            img: "/Blog/Cuisine/kahwa.jpg",
+            img: "/Blog/KashmirCuisine/3.webp",
         },
         {
             icon: <FlameKindling className="w-8 h-8 text-orange-600" />,
             title: "Rista & Gushtaba",
             desc: "Rista is a spicy red curry with minced mutton balls, while Gushtaba is its milder, yogurt-based version. Both are iconic dishes of the Wazwan feast and hold cultural significance.",
-            img: "/Blog/Cuisine/rista-gushtaba.jpg",
+            img: "/Blog/KashmirCuisine/4.webp",
         },
         {
             icon: <Leaf className="w-8 h-8 text-green-600" />,
             title: "Vegetarian Kashmiri Dishes",
             desc: "From Dum Aloo to Chaman (cottage cheese curry), Kashmiri vegetarian dishes are rich in flavor and aroma, making them equally popular among travelers.",
-            img: "/Blog/Cuisine/veg-dishes.jpg",
+            img: "/Blog/KashmirCuisine/5.webp",
         },
     ];
 
@@ -53,11 +53,11 @@ export default function KashmirCuisine() {
             {/* Hero */}
             <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
                 <img
-                    src="/Blog/Cuisine/hero.jpg"
+                    src="/Blog/KashmirCuisine/Hero.webp"
                     alt="Kashmiri Cuisine"
                     className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[3000ms] hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/60" />
+
                 <div className="relative z-10 text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold animate-fadeIn">
                         Kashmir Cuisine – A Taste of Tradition

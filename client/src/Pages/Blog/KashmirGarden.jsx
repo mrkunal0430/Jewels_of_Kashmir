@@ -20,12 +20,12 @@ export default function KashmirGarden() {
             {/* Hero Section */}
             <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
                 <img
-                    src="/Blog/KashmirGarden/hero.jpg"
+                    src="/Blog/Garden/Hero.jpg"
                     alt="Kashmir Gardens"
                     className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[3000ms] hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/50" />
-                <div className="relative z-10 text-white px-4">
+
+                <div className="relative z-10  px-4">
                     <h1 className="text-4xl md:text-6xl font-bold animate-fadeIn">
                         Kashmir Gardens
                     </h1>

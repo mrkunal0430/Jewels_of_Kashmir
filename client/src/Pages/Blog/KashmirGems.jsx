@@ -5,22 +5,22 @@ export default function KashmiriGems() {
     const gems = [
         {
             name: "Kashmiri Sapphire",
-            img: "/Blog/KashmiriGems/sapphire.jpg",
+            img: "/Blog/HiddenGem/1.webp",
             desc: "Known worldwide for its unique cornflower-blue color, Kashmiri Sapphire is one of the rarest and most precious gemstones.",
         },
         {
             name: "Emerald",
-            img: "/Blog/KashmiriGems/emerald.jpg",
+            img: "/Blog/HiddenGem/2.webp",
             desc: "Emeralds from Kashmir are admired for their deep green color and clarity, symbolizing rebirth and prosperity.",
         },
         {
             name: "Ruby",
-            img: "/Blog/KashmiriGems/ruby.jpg",
+            img: "/Blog/HiddenGem/3.webp",
             desc: "Called the 'King of Gems', Kashmiri rubies are rare and prized for their rich red hues and brilliance.",
         },
         {
             name: "Tourmaline",
-            img: "/Blog/KashmiriGems/tourmaline.jpg",
+            img: "/Blog/HiddenGem/4.webp",
             desc: "Tourmalines in Kashmir are found in multiple colors, believed to have healing energies and protective qualities.",
         },
     ];
@@ -43,11 +43,11 @@ export default function KashmiriGems() {
             {/* Hero */}
             <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
                 <img
-                    src="/Blog/KashmiriGems/hero.jpg"
+                    src="/Blog/HiddenGem/Hero.webp"
                     alt="Kashmiri Gems"
                     className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[3000ms] hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/60" />
+
                 <div className="relative z-10 text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold animate-fadeIn">
                         Kashmiri Gems
@@ -79,7 +79,7 @@ export default function KashmiriGems() {
 
             {/* Gems Grid */}
             <section className="bg-gray-50 py-12">
-                <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
                     {gems.map((gem, i) => (
                         <div
                             key={i}

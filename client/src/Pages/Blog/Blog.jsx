@@ -13,7 +13,7 @@ export default function BlogPage() {
             title: "Experience the Magic of Nigeen Lake",
             excerpt:
                 "Why Nigeen Lake is called the ‘Jewel in the Ring of Kashmir’ and how to make the most of your stay here.",
-            image: "Blog/hero_child.webp",
+            image: "/Blog/Nageen/hero_child.webp",
             category: "Destinations",
             link: "/blog/nigeen-lake",
         },
@@ -22,7 +22,7 @@ export default function BlogPage() {
             title: "Top 5 Things to Do in a Houseboat Stay",
             excerpt:
                 "From sipping Kahwa at sunrise to stargazing at night, here’s how to create memories on a houseboat.",
-            image: "Blog/5things.webp",
+            image: "/Blog/ThingsToDo/5things.webp",
             category: "Experiences",
             link: "/blog/things-to-do-in-a-houseboat-stay",
         },
@@ -31,7 +31,7 @@ export default function BlogPage() {
             title: "Kashmiri Cuisine: A Food Lover’s Guide",
             excerpt:
                 "Explore Rogan Josh, Gushtaba, and the world-famous Wazwan – a feast for the senses.",
-            image: "Blog/Cuisine.webp",
+            image: "/Blog/KashmirCuisine/Cuisine.webp",
             category: "Food & Culture",
             link: "/blog/kashmiri-cuisine",
         },
@@ -40,7 +40,7 @@ export default function BlogPage() {
             title: "A Journey Through Gulmarg",
             excerpt:
                 "Discover why Gulmarg is a year-round paradise for skiers and trekkers alike.",
-            image: "Blog/Gulmarg.webp",
+            image: "/Blog/Gulmarg.webp",
             category: "Destinations",
             link: "/tour/gulmarg",
         },
@@ -49,7 +49,7 @@ export default function BlogPage() {
             title: "Hidden Gems of Srinagar",
             excerpt:
                 "Uncover offbeat experiences and lesser-known attractions in Srinagar.",
-            image: "Blog/Hidden_gem.webp",
+            image: "/Blog/HiddenGem/Hidden_gem.webp",
             category: "Travel Tips",
             link: "/blog/kashmir-gems",
         },
@@ -58,7 +58,7 @@ export default function BlogPage() {
             title: "The Enchanting Gardens of Kashmir",
             excerpt:
                 "Walk through Shalimar, Nishat, and Chashme Shahi — Mughal-era gardens that tell timeless stories.",
-            image: "Blog/Garden.webp",
+            image: "/Blog/Garden/Garden.webp",
             category: "Culture",
             link: "/blog/kashmir-gardens",
         },
