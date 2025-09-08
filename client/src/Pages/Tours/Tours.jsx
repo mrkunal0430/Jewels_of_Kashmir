@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Tour() {
     const navigate = useNavigate();
@@ -40,6 +41,16 @@ export default function Tour() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-100">
+
+            <Helmet>
+                <title>Tours of Kashmir | Jewels of Kashmir</title>
+                <meta
+                    name="description"
+                    content="Explore the best tours in Kashmir with Jewels of Kashmir – from Gulmarg’s snow peaks to Pahalgam’s lush valleys. Find your perfect travel experience."
+                />
+                <link rel="canonical" href="https://www.jewelofkashmir.in/tour" />
+            </Helmet>
+
             {/* Hero */}
             <section className="relative overflow-hidden">
                 <div className="absolute inset-0">

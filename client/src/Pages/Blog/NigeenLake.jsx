@@ -19,7 +19,7 @@ export default function NigeenLake() {
             </Helmet>
 
             {/* Hero Section */}
-            <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[calc(100vh-64px)] flex justify-center items-center text-center">
+            <section className="relative w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] flex justify-center items-center text-center">
                 <img
                     src="/Blog/Nageen/NageenLake.webp"
                     alt="Nigeen Lake Kashmir"
@@ -32,7 +32,7 @@ export default function NigeenLake() {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 text-white px-4"
                 >
-                    <h1 className="text-amber-400 text-4xl md:text-6xl font-bold">Nigeen Lake</h1>
+                    <h1 className="text-amber-400 text-3xl md:text-6xl font-bold">Nigeen Lake</h1>
                     <p className="mt-4 font-bold text-lg md:text-xl max-w-2xl mx-auto">
                         A tranquil paradise in Srinagar, often called the "Jewel in the
                         Ring" of Kashmir.

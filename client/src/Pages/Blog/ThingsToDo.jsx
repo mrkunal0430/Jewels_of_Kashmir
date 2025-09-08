@@ -51,7 +51,7 @@ export default function HouseboatThings() {
             </Helmet>
 
             {/* Hero */}
-            <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
+            <section className="relative w-full h-[3  0vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center text-center overflow-hidden">
                 <img
                     src="/Blog/ThingsToDo/Hero.webp"
                     alt="Houseboat Experience Kashmir"
@@ -59,7 +59,7 @@ export default function HouseboatThings() {
                 />
 
                 <div className="relative z-10 text-white px-4">
-                    <h1 className="text-black text-4xl md:text-6xl font-bold animate-fadeIn">
+                    <h1 className="text-black text-3xl md:text-6xl font-bold animate-fadeIn">
                         5 Things to Do on a Houseboat
                     </h1>
 

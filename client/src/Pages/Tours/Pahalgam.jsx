@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// Note: this single file exports two components: Pahalgam and Sonmarg
-// Usage: import { Pahalgam, Sonmarg } from './Tours_Pahalgam_Sonmarg';
 
 export default function Pahalgam() {
     const [openFaq, setOpenFaq] = useState(null);

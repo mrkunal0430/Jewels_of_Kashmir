@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { useRef } from "react";
+import { Helmet } from "react-helmet";
 
 export default function BlogPage() {
     const posts = [
@@ -69,6 +70,16 @@ export default function BlogPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-emerald-50">
             {/* Hero Section */}
+
+            <Helmet>
+                <title>Kashmir Blog | Jewels of Kashmir</title>
+                <meta
+                    name="description"
+                    content="Read inspiring travel blogs from Kashmir – stories, guides, and insights into the culture, food, and breathtaking destinations of the valley."
+                />
+                <link rel="canonical" href="https://www.jewelofkashmir.in/blog" />
+            </Helmet>
+
             <section
                 className="relative h-[40vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center text-center bg-cover bg-center"
                 style={{ backgroundImage: "url('Blog/hero.webp')" }}

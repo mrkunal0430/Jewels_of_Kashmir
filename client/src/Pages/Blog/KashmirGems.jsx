@@ -41,7 +41,7 @@ export default function KashmiriGems() {
             </Helmet>
 
             {/* Hero */}
-            <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
+            <section className="relative w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center text-center overflow-hidden">
                 <img
                     src="/Blog/HiddenGem/Hero.webp"
                     alt="Kashmiri Gems"
@@ -49,7 +49,7 @@ export default function KashmiriGems() {
                 />
 
                 <div className="relative z-10 text-white px-4">
-                    <h1 className="text-4xl md:text-6xl font-bold animate-fadeIn">
+                    <h1 className="text-3xl md:text-6xl font-bold animate-fadeIn">
                         Kashmiri Gems
                     </h1>
                     <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto animate-fadeIn delay-200">

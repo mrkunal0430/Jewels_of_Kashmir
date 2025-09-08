@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mountain, Ship, Heart, Sparkles, Star } from "lucide-react";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -24,8 +25,18 @@ export default function About() {
 
     return (
         <div className="w-full">
+
+            <Helmet>
+                <title>About Us | Jewels of Kashmir</title>
+                <meta
+                    name="description"
+                    content="Learn more about Jewels of Kashmir – your trusted guide to the beauty, culture, and treasures of Kashmir. Discover who we are, our vision, and how we bring authentic Kashmiri experiences to you."
+                />
+                <link rel="canonical" href="https://www.jewelofkashmir.in/about" />
+            </Helmet>
+
             {/* Hero Section */}
-            <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-center justify-center text-center">
+            <section className="relative overflow-hidden w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center text-center">
                 <img
                     src="About/Hero.webp"
                     alt="Jewels of Kashmir"
