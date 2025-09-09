@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -213,14 +214,12 @@ const SuperDeluxe = () => {
 
             {/* CTA */}
             <div className="text-center mt-10">
-                <a
-                    href="/contact"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white text-lg font-semibold rounded-xl shadow-lg transition"
+                <Link
+                    to="/contact"
+                    className="inline-block mt-8 px-8 py-4 bg-[#f5c934] text-gray-900 font-semibold rounded-2xl hover:bg-yellow-400 transition"
                 >
                     Contact Us
-                </a>
+                </Link>
             </div>
 
         </div>

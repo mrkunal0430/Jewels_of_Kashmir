@@ -259,15 +259,12 @@ const Home = () => {
             </section>
 
             {/* 📞 CTA */}
-            <section className="relative py-20 bg-[#0a2540] text-center text-white">
-                <motion.h2
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+            <section className="relative p-6 bg-[#0a2540] text-center text-white">
+                <h1
                     className="text-3xl md:text-4xl font-bold"
                 >
                     Ready to Experience the Jewels of Kashmir?
-                </motion.h2>
+                </h1>
                 <Link
                     to="/contact"
                     className="inline-block mt-8 px-8 py-4 bg-[#f5c934] text-gray-900 font-semibold rounded-2xl hover:bg-yellow-400 transition"

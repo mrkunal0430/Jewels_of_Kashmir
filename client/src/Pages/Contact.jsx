@@ -1,6 +1,7 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaWhatsapp, FaYoutube, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 
@@ -41,6 +42,16 @@ export default function Contact() {
 
     return (
         <div className="w-full">
+
+
+            <Helmet>
+                <title>Contact Us | Jewels of Kashmir</title>
+                <meta
+                    name="description"
+                    content="Get in touch with Jewels of Kashmir for tour bookings, inquiries, or personalized travel assistance. We’re here to help you plan your dream Kashmir trip."
+                />
+                <link rel="canonical" href="https://www.jewelofkashmir.in/contact" />
+            </Helmet>
             {/* Hero Section */}
             <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-end justify-center text-center">
                 <img
@@ -82,8 +93,8 @@ export default function Contact() {
                 <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-2xl overflow-hidden">
 
                     {/* Left - Contact Info */}
-                    <div className="bg-gradient-to-br from-yellow-600 to-yellow-400 text-white p-6 flex flex-col justify-between">
-                        <div>
+                    <div className="bg-gradient-to-br from-yellow-600 to-yellow-400 text-white p-6  flex flex-col justify-between">
+                        <div className="">
                             <h2 className="text-3xl font-bold mb-3">Get in Touch</h2>
                             <p className="mb-4">
                                 Experience luxury and tradition with <b>Jewels of Kashmir Houseboats</b>.

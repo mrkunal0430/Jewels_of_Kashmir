@@ -13,14 +13,18 @@ export default function About() {
     const [open, setOpen] = useState(false);
 
     const photos = [
-        { src: "HouseBoats/Nageen_Suite/1.webp", title: "Golden Sunrise on Nigeen Lake" },
-        { src: "HouseBoats/Nageen_Suite/2.webp", title: "Shikara Ride Experience" },
-        { src: "HouseBoats/Nageen_Suite/3.webp", title: "Traditional Kashmiri Interiors" },
-        { src: "HouseBoats/Nageen_Suite/4.webp", title: "Evening Tea by the Lake" },
-        { src: "HouseBoats/Nageen_Suite/5.webp", title: "Night View of Houseboats" },
-        { src: "HouseBoats/Nageen_Suite/6.webp", title: "Local Kashmiri Cuisine" },
-        { src: "HouseBoats/Nageen_Suite/7.webp", title: "Peaceful Morning View" },
-        { src: "HouseBoats/Nageen_Suite/8.webp", title: "Traditional Wooden Artwork" },
+        { src: "About/Gallery/1.webp", title: "Golden Sunrise on Nigeen Lake" },
+        { src: "About/Gallery/2.webp", title: "Shikara Ride Experience" },
+        { src: "About/Gallery/3.webp", title: "Traditional Kashmiri Interiors" },
+        { src: "About/Gallery/4.webp", title: "Evening Tea by the Lake" },
+        { src: "About/Gallery/5.webp", title: "Night View of Houseboats" },
+        { src: "About/Gallery/6.webp", title: "Local Kashmiri Cuisine" },
+        { src: "About/Gallery/7.webp", title: "Peaceful Morning View" },
+        { src: "About/Gallery/8.webp", title: "Traditional Wooden Artwork" },
+        { src: "About/Gallery/9.webp", title: "Traditional Wooden Artwork" },
+        { src: "About/Gallery/10.webp", title: "Traditional Wooden Artwork" },
+        { src: "About/Gallery/11.webp", title: "Traditional Wooden Artwork" },
+        { src: "About/Gallery/12.webp", title: "Traditional Wooden Artwork" },
     ];
 
     return (
