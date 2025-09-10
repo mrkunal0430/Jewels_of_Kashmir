@@ -36,14 +36,42 @@ export default function About() {
                     name="description"
                     content="Learn more about Jewels of Kashmir – your trusted guide to the beauty, culture, and treasures of Kashmir. Discover who we are, our vision, and how we bring authentic Kashmiri experiences to you."
                 />
+                <meta property="og:title" content="About Us | Jewels of Kashmir" />
+                <meta property="og:description" content="Learn more about Jewels of Kashmir – your trusted guide to the beauty, culture, and treasures of Kashmir. Discover who we are, our vision, and how we bring authentic Kashmiri experiences to you." />
+                <meta property="og:image" content="https://www.jewelofkashmir.in/About/Hero.webp" />
+                <meta property="og:url" content="https://www.jewelofkashmir.in/about" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About Us | Jewels of Kashmir" />
+                <meta name="twitter:description" content="Learn more about Jewels of Kashmir – your trusted guide to the beauty, culture, and treasures of Kashmir. Discover who we are, our vision, and how we bring authentic Kashmiri experiences to you." />
+                <meta name="twitter:image" content="https://www.jewelofkashmir.in/About/Hero.webp" />
                 <link rel="canonical" href="https://www.jewelofkashmir.in/about" />
+                <script type="application/ld+json">
+                    {`
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": "https://www.jewelofkashmir.in/about",
+                        "name": "About Us | Jewels of Kashmir",
+                        "description": "Learn more about Jewels of Kashmir – your trusted guide to the beauty, culture, and treasures of Kashmir. Discover who we are, our vision, and how we bring authentic Kashmiri experiences to you.",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Jewels of Kashmir",
+                            "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://www.jewelofkashmir.in/Home/Og-Home.webp"
+                            }
+                        }
+                        }
+                    `}
+                </script>
             </Helmet>
 
             {/* Hero Section */}
             <section className="relative overflow-hidden w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center text-center">
                 <img
                     src="About/Hero.webp"
-                    alt="Jewels of Kashmir"
+                    alt="A beautiful view of the Jewels of Kashmir houseboat on the serene Nigeen Lake."
                     className="absolute inset-0 w-full h-full object-cover"
                     loading="lazy"
                 />

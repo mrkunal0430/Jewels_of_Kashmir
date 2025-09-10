@@ -79,14 +79,43 @@ const Home = () => {
                     {`
           {
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "LocalBusiness",
             "name": "Jewels of Kashmir",
+            "image": "https://www.jewelofkashmir.in/Home/Og-Home.webp",
+            "@id": "",
             "url": "https://www.jewelofkashmir.in/",
-            "logo": "https://www.jewelofkashmir.in/Home/Og-Home.webp",
+            "telephone": "+91 9906607462",
+            "priceRange": "₹₹₹",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Nigeen Lake",
+              "addressLocality": "Srinagar",
+              "postalCode": "190006",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.1166,
+              "longitude": 74.8224
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            }, 
             "sameAs": [
               "https://www.facebook.com/jewelofkashmirhouseboat/",
               "https://www.instagram.com/jewel_kashmir_houseboat/"
-            ]
+            ] 
           }
           `}
                 </script>
@@ -194,7 +223,7 @@ const Home = () => {
                                 <div className="relative group">
                                     <img
                                         src={boat.img}
-                                        alt={boat.name}
+                                        alt={`Image of ${boat.name} houseboat`}
                                         className="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-500"
                                         loading="lazy"
                                         width={400}

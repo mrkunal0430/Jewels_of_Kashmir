@@ -50,7 +50,35 @@ export default function Contact() {
                     name="description"
                     content="Get in touch with Jewels of Kashmir for tour bookings, inquiries, or personalized travel assistance. We’re here to help you plan your dream Kashmir trip."
                 />
+                <meta property="og:title" content="Contact Us | Jewels of Kashmir" />
+                <meta property="og:description" content="Get in touch with Jewels of Kashmir for tour bookings, inquiries, or personalized travel assistance. We’re here to help you plan your dream Kashmir trip." />
+                <meta property="og:image" content="https://www.jewelofkashmir.in/Contact_Page.webp" />
+                <meta property="og:url" content="https://www.jewelofkashmir.in/contact" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Contact Us | Jewels of Kashmir" />
+                <meta name="twitter:description" content="Get in touch with Jewels of Kashmir for tour bookings, inquiries, or personalized travel assistance. We’re here to help you plan your dream Kashmir trip." />
+                <meta name="twitter:image" content="https://www.jewelofkashmir.in/Contact_Page.webp" />
                 <link rel="canonical" href="https://www.jewelofkashmir.in/contact" />
+                <script type="application/ld+json">
+                    {`
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": "https://www.jewelofkashmir.in/contact",
+                        "name": "Contact Us | Jewels of Kashmir",
+                        "description": "Get in touch with Jewels of Kashmir for tour bookings, inquiries, or personalized travel assistance. We’re here to help you plan your dream Kashmir trip.",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Jewels of Kashmir",
+                            "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://www.jewelofkashmir.in/Home/Og-Home.webp"
+                            }
+                        }
+                        }
+                    `}
+                </script>
             </Helmet>
             {/* Hero Section */}
             <section className="relative overflow-hidden w-full h-[200px] sm:h-[400px] md:h-[470px] lg:h-[calc(100vh-64px)] flex items-end justify-center text-center">
@@ -173,15 +201,16 @@ export default function Contact() {
                             <input
                                 type="hidden"
                                 name="access_key"
-                                value="YOUR_ACCESS_KEY_HERE"
+                                value="76357d33-c1c3-4462-95a0-d93a3290be39"
                             />
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                <label htmlFor="name" className="block mb-1 text-sm font-medium text-gray-600">
                                     Your Name
                                 </label>
                                 <input
                                     type="text"
+                                    id="name"
                                     name="name"
                                     placeholder="Enter your name"
                                     required
@@ -190,11 +219,12 @@ export default function Contact() {
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                <label htmlFor="phone" className="block mb-1 text-sm font-medium text-gray-600">
                                     Contact Number
                                 </label>
                                 <input
                                     type="tel"
+                                    id="phone"
                                     name="phone"
                                     placeholder="+91 9876543210"
                                     required
@@ -203,11 +233,12 @@ export default function Contact() {
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                <label htmlFor="email" className="block mb-1 text-sm font-medium text-gray-600">
                                     Email Address
                                 </label>
                                 <input
                                     type="email"
+                                    id="email"
                                     name="email"
                                     placeholder="jewelsofkashmir@gmail.com"
                                     required
@@ -216,10 +247,11 @@ export default function Contact() {
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm font-medium text-gray-600">
+                                <label htmlFor="message" className="block mb-1 text-sm font-medium text-gray-600">
                                     Message
                                 </label>
                                 <textarea
+                                    id="message"
                                     name="message"
                                     rows="4"
                                     placeholder="Write your message..."
