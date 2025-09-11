@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "name": "Amit Sharma",
+        "name": "Karan Dudeja",
         "location": "Delhi",
-        "message": "The stay was magical ✨, hospitality was beyond expectations.",
+        "message": "Had an amazing experience and a luxurious stay at Jewel of Kashmir Houseboats. The service and staff were exceptional, and the houseboat was both stunning and cozy.",
         "rating": 5,
-        "image": "/images/testimonials/amit.jpg"
+        "image": "/Home/Testimonial/1.webp"
     },
     {
         "id": 2,
-        "name": "Vivek Thakur",
+        "name": "Mohit Bhatia",
         "location": "Mumbai",
-        "message": "Best houseboat experience, felt like royalty on water.",
+        "message": "Great Experience and premium stay at Jewel of Kashmir Houseboats. Wonderful Service and Staffs, Amazing and cozy Houseboat",
         "rating": 5,
-        "image": "/images/testimonials/sara.jpg"
+        "image": "/Home/Testimonial/2.webp"
     },
     {
         "id": 3,

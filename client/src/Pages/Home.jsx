@@ -5,6 +5,9 @@ import { Helmet } from "react-helmet";
 import TestimonialData from "../Data/Testimonial.json";
 import TestimonialSlider from "../components/TestimonialSlider";
 
+
+
+
 const Home = () => {
     return (
         <div className="bg-[#fdfcf7] text-gray-900 overflow-hidden">
@@ -20,104 +23,91 @@ const Home = () => {
                     content="Jewels of Kashmir, Houseboat Stay, Kashmir tourism, Nigeen Lake, Mughal Gardens, Kashmiri gems, Kashmiri cuisine, Kashmir houseboats, Explore Kashmir"
                 />
 
-                {/* 📱 Open Graph */}
-                <meta
-                    property="og:title"
-                    content="Jewels of Kashmir | Explore Lakes, Houseboats Stays & Culture"
-                />
+                {/* 📱 Open Graph (Facebook, WhatsApp, LinkedIn, Instagram) */}
+                <meta property="og:title" content="Jewels of Kashmir | Explore Lakes, Houseboat Stays & Culture" />
                 <meta
                     property="og:description"
                     content="Explore Kashmir’s natural beauty and heritage – lakes, gardens, gems, houseboats, and cuisine."
                 />
-                <meta
-                    property="og:image"
-                    content="https://www.jewelofkashmir.in/Home/Og-Home.webp"
-                />
+                <meta property="og:image" content="https://www.jewelofkashmir.in/Home/Og-Home.jpg" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
                 <meta property="og:url" content="https://www.jewelofkashmir.in/" />
                 <meta property="og:type" content="website" />
 
-                {/* 🐦 Twitter */}
+                {/* 🐦 Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Jewels of Kashmir | Explore Culture & Beauty of Houseboats Stay"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Jewels of Kashmir – Your Houseboat Stay"
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://www.jewelofkashmir.in/Home/Og-Home.webp"
-                />
+                <meta name="twitter:title" content="Jewels of Kashmir | Explore Culture & Beauty of Houseboat Stays" />
+                <meta name="twitter:description" content="Jewels of Kashmir – Your Houseboat Stay" />
+                <meta name="twitter:image" content="https://www.jewelofkashmir.in/Home/Og-Home.jpg" />
 
                 {/* ✅ Canonical */}
                 <link rel="canonical" href="https://www.jewelofkashmir.in/" />
 
-                {/* 📊 Schema */}
+                {/* 📊 Schema - Website */}
                 <script type="application/ld+json">
                     {`
-          {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://www.jewelofkashmir.in/",
-            "name": "Jewels of Kashmir",
-            "description": "A complete guide to the Jewels of Kashmir – Lakes, Gardens, Gems, Cuisine, and Culture.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Jewels of Kashmir",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.jewelofkashmir.in/Home/Og-Home.webp"
-              }
-            }
-          }
-          `}
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": "https://www.jewelofkashmir.in/",
+                        "name": "Jewels of Kashmir",
+                        "description": "A complete guide to the Jewels of Kashmir – Lakes, Gardens, Gems, Cuisine, and Culture.",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Jewels of Kashmir",
+                            "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://www.jewelofkashmir.in/Home/Og-Home.jpg"
+                            }
+                        }
+                        }
+                    `}
                 </script>
 
+                {/* 📊 Schema - Local Business */}
                 <script type="application/ld+json">
                     {`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Jewels of Kashmir",
-            "image": "https://www.jewelofkashmir.in/Home/Og-Home.webp",
-            "@id": "",
-            "url": "https://www.jewelofkashmir.in/",
-            "telephone": "+91 9906607462",
-            "priceRange": "₹₹₹",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Nigeen Lake",
-              "addressLocality": "Srinagar",
-              "postalCode": "190006",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 34.1166,
-              "longitude": 74.8224
-            },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-              ],
-              "opens": "00:00",
-              "closes": "23:59"
-            }, 
-            "sameAs": [
-              "https://www.facebook.com/jewelofkashmirhouseboat/",
-              "https://www.instagram.com/jewel_kashmir_houseboat/"
-            ] 
-          }
-          `}
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Jewels of Kashmir",
+      "image": "https://www.jewelofkashmir.in/Home/Og-Home.jpg",
+      "url": "https://www.jewelofkashmir.in/",
+      "telephone": "+91 9906607462",
+      "priceRange": "₹₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nigeen Lake",
+        "addressLocality": "Srinagar",
+        "postalCode": "190006",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.1166,
+        "longitude": 74.8224
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/jewelofkashmirhouseboat/",
+        "https://www.instagram.com/jewel_kashmir_houseboat/"
+      ] 
+    }
+    `}
                 </script>
             </Helmet>
 
@@ -211,7 +201,7 @@ const Home = () => {
                             {
                                 name: "Nigeen Suite",
                                 img: "HouseBoats/NageenLake.webp",
-                                path: "/nageen-lake",
+                                path: "/nageen-suite",
                                 desc: "Cozy suite with traditional decor & private balcony",
                             },
                         ].map((boat, idx) => (
