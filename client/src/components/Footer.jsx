@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -19,10 +20,30 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
                     <ul className="space-y-2">
-                        <li><a href="#" className="hover:text-yellow-400 transition">Home</a></li>
-                        <li><a href="#" className="hover:text-yellow-400 transition">Houseboats</a></li>
-                        <li><a href="#" className="hover:text-yellow-400 transition">Gallery</a></li>
-                        <li><a href="#" className="hover:text-yellow-400 transition">Contact Us</a></li>
+                        <li> <NavLink to="/" className={({ isActive }) =>
+                            `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                            }`
+                        }>
+                            Home
+                        </NavLink></li>
+                        <li> <NavLink to="/tour" className={({ isActive }) =>
+                            `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                            }`
+                        }>
+                            Tours
+                        </NavLink></li>
+                        <li> <NavLink to="/blog" className={({ isActive }) =>
+                            `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                            }`
+                        }>
+                            Blog
+                        </NavLink></li>
+                        <li><NavLink to="/contact" className={({ isActive }) =>
+                            `transition ${isActive ? "text-white" : "text-amber-400 hover:text-white"
+                            }`
+                        }>
+                            Contact Us
+                        </NavLink></li>
                     </ul>
                 </div>
 

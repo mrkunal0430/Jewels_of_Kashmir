@@ -23,6 +23,7 @@ const ThingsToDo = lazy(() => import('./Pages/Blog/ThingsToDo'));
 const KashmiriCuisine = lazy(() => import('./Pages/Blog/KashmiriCuisine'));
 const KashmirGems = lazy(() => import('./Pages/Blog/KashmirGems'));
 const KashmirGardens = lazy(() => import('./Pages/Blog/KashmirGarden'));
+const NotFound = lazy(() => import('./Pages/NotFound'));
 
 
 
@@ -72,6 +73,8 @@ function App() {
 
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />

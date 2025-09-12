@@ -140,7 +140,7 @@ const Home = () => {
                         Feel the <span>Harmony</span>
                     </h1>
 
-                    <div className="mt-10 flex justify-center gap-4">
+                    <div className="mt-15 flex justify-center gap-4">
                         <Link
                             to="/contact"
                             className="px-6 py-3 rounded-2xl bg-[#f5c934] text-gray-900 font-semibold hover:bg-yellow-400 transition"

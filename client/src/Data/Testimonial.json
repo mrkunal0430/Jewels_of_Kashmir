@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Karan Dudeja",
         "location": "Delhi",
-        "message": "Had an amazing experience and a luxurious stay at Jewel of Kashmir Houseboats. The service and staff were exceptional, and the houseboat was both stunning and cozy.",
+        "message": "Amazing experience! The houseboat was luxurious yet cozy. Loved every bit of the stay.",
         "rating": 5,
         "image": "/Home/Testimonial/1.webp"
     },
@@ -11,40 +11,40 @@
         "id": 2,
         "name": "Mohit Bhatia",
         "location": "Mumbai",
-        "message": "Great Experience and premium stay at Jewel of Kashmir Houseboats. Wonderful Service and Staffs, Amazing and cozy Houseboat",
+        "message": "Great hospitality and very comfortable rooms. The view from the deck was unforgettable.",
         "rating": 5,
         "image": "/Home/Testimonial/2.webp"
     },
     {
         "id": 3,
-        "name": "Areesha amjad",
+        "name": "Yug",
         "location": "Mumbai",
-        "message": "Best houseboat experience, felt like royalty on water.",
+        "message": "Peaceful stay on the lake, felt like a dream. Would love to come back soon!",
         "rating": 5,
-        "image": "/images/testimonials/sara.jpg"
+        "image": "/Home/Testimonial/3.webp"
     },
     {
         "id": 4,
-        "name": "Sara Khan",
+        "name": "Supriya",
         "location": "Mumbai",
-        "message": "Best houseboat experience, felt like royalty on water.",
+        "message": "The service was excellent and the interiors were royal. Truly a unique experience.",
         "rating": 5,
-        "image": "/images/testimonials/sara.jpg"
+        "image": "/Home/Testimonial/4.webp"
     },
     {
         "id": 5,
-        "name": "Rahul kumar",
+        "name": "Rahul Kumar",
         "location": "Mumbai",
-        "message": "Best houseboat experience, felt like royalty on water.",
+        "message": "Best vacation ever! The food, the staff, and the ambience were just perfect.",
         "rating": 5,
-        "image": "/images/testimonials/sara.jpg"
+        "image": "/Home/Testimonial/5.webp"
     },
     {
         "id": 6,
-        "name": "Sara Khan",
-        "location": "Mumbai",
-        "message": "Best houseboat experience, felt like royalty on water.",
+        "name": "Dhruv Gupta",
+        "location": "Pune",
+        "message": "Felt at home on the water. Beautifully maintained and very relaxing stay.",
         "rating": 5,
-        "image": "/images/testimonials/sara.jpg"
+        "image": "/Home/Testimonial/6.webp"
     }
 ]

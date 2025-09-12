@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
+
+
 const TestimonialSlider = ({ TestimonialData }) => {
 
 
@@ -23,7 +25,7 @@ const TestimonialSlider = ({ TestimonialData }) => {
         >
             {TestimonialData.map((guest) => (
                 <SwiperSlide key={guest.id}>
-                    <div className="p-5 rounded-2xl overflow-hidden shadow-lg bg-white/90 backdrop-blur-md border border-gray-200 hover:shadow-2xl transition-all duration-500">
+                    <div className="p-5 rounded-2xl overflow-hidden shadow-lg bg-white/90 backdrop-blur-md border border-gray-200 hover:shadow-2xl transition-all duration-500 my-3">
                         {/* Image */}
                         <div className="relative h-64">
                             <img

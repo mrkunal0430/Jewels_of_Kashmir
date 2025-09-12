@@ -13,18 +13,24 @@ export default function Contact() {
 
         const formData = new FormData(e.target);
 
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData,
-        });
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData,
+            });
 
-        const result = await response.json();
+            const result = await response.json();
+            // console.log("Web3Forms Response:", result); // 👈 Debug line
 
-        if (result.success) {
-            setIsSubmitted(true);
-            e.target.reset(); // clear form
-        } else {
-            alert("Something went wrong. Please try again.");
+            if (result.success) {
+                setIsSubmitted(true);
+                e.target.reset();
+            } else {
+                alert(result.message || "Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Network error, please try again later.");
         }
     };
 
@@ -35,7 +41,7 @@ export default function Contact() {
         e.preventDefault();
         const name = e.target.name.value;
         const message = e.target.message.value;
-        const whatsappUrl = `https://wa.me/918750075080?text=Hi, my name is ${name}. ${message}`;
+        const whatsappUrl = `https://wa.me/919419017886?text=Hi, my name is ${name}. ${message}`;
         window.open(whatsappUrl, "_blank");
         e.target.reset();
     };
@@ -201,7 +207,7 @@ export default function Contact() {
                             <input
                                 type="hidden"
                                 name="access_key"
-                                value="76357d33-c1c3-4462-95a0-d93a3290be39"
+                                value="af81d87c-2cc2-41c8-af07-62f9c2e01bb0"
                             />
 
                             <div>
